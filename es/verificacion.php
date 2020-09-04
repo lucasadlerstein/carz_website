@@ -4,7 +4,7 @@
     <script>
         Swal.fire({
             icon: 'success',
-            title: 'Message sent',
+            title: 'Mensaje enviado',
             showConfirmButton: false,
             timer: 1300
         });
@@ -16,7 +16,7 @@
         <script>
             Swal.fire({
                 icon: 'error',
-                title: 'Message not sent',
+                title: 'El mensaje no se envió',
                 showConfirmButton: false,
                 timer: 1500
             });

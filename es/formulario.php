@@ -15,28 +15,28 @@ $pickuptime = $pickhora . ':' . $pickmin;
 $dropofftime = $drophora . ':' . $dropmin;
 
 if($age == '19'){
-    $driver = "Driver%20age%20is%20not%20above%2025";
-    $driverEmail = "Driver age is not above 25.";
+    $driver = "El%20conductor%20es%20menor%20de%2025";
+    $driverEmail = "El conductor es menor de 25 años";
 }else{
-    $driver = "Driver%20age%20is%20above%2025";
-    $driverEmail = "Driver age is above 25.";
+    $driver = "El%20conductor%20es%20mayor%20de%2025";
+    $driverEmail = "El conductor es mayor de 25 años";
 }
 
-$texto = "Hi,%20I%20would%20like%20to%20receive%20information%20for%20my%20trip%20in%20the%20USA.%0D$dates%0DPick-Up:%20$pickup%20-%20$pickuptime%0DDrop-Off:%20$dropoff%20-%20$dropofftime%0D$driver";
+$texto = "Hola,%20quisiera%20alquilar%20un%20auto%20en%20EEUU.%0D$dates%0DPick-Up:%20$pickup%20-%20$pickuptime%0DDrop-Off:%20$dropoff%20-%20$dropofftime%0D$driver";
 
 if($via == 'wp'){
-    header("Location: http://wa.me/13478993389?text=$texto");
+    header("Location: https://wa.me/13478993389?text=$texto");
 }else{
     if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
         
     $address = "info@carzrental.net";
-    $e_subject = 'Carz Rental Contact Form';
+    $e_subject = 'Carz Rental - Formulario de Contacto';
         
-    $e_body = "Hi, I would like to receive information for my trip in the U.S." . PHP_EOL . PHP_EOL;
+    $e_body = "Hola, quiero recibir más información para alquilar un auto en EEUU." . PHP_EOL . PHP_EOL;
     $e_content = $dates . PHP_EOL;
     $e_content .= "Pick-Up: $pickup - $pickuptime" . PHP_EOL . "Drop-Off: $dropoff - $dropofftime" . PHP_EOL;
     $e_content .= $driverEmail . PHP_EOL . PHP_EOL;
-    $e_reply = "Personal Information: $email - $telefono";
+    $e_reply = "Datos de contacto: $email - $telefono";
 
     $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
     

@@ -1,23 +1,7 @@
 $(document).ready(function() {
 
-    $('#tipo-contacto').blur(function() {
-        if ($("#tipo-contacto option:selected").text() === 'Email') {
-            $('#acaEmail').removeClass('oculto');
-            $('#acaEmail').addClass('block');
-            $('#acaEmail').prop('required', true);
-            $('#acaTel').removeClass('oculto');
-            $('#acaTel').addClass('block');
-            $('#acaTel').prop('required', true);
-        }
-        if ($("#tipo-contacto option:selected").text() === 'WhatsApp') {
-            $('#acaEmail').addClass('oculto');
-            $('#acaEmail').removeClass('block');
-            $('#acaEmail').prop('required', false);
-            $('#acaTel').addClass('oculto');
-            $('#acaTel').removeClass('block');
-            $('#acaTel').prop('required', false);
-        }
-    });
+    $('#tipo-contacto').click(opcionElegida);
+    $('#tipo-contacto').on('blur', opcionElegida);
 
     $('#btnBest').click(function() {
         $('#btnBest').addClass('auto-activo');
@@ -41,6 +25,25 @@ $(document).ready(function() {
         $('#carzNavegacion').removeClass('show');
     });
 
+    function opcionElegida() {
+        if ($("#tipo-contacto option:selected").text() === 'Email') {
+            $('#acaEmail').removeClass('oculto');
+            $('#acaEmail').addClass('block');
+            $('#acaEmail').prop('required', true);
+            $('#acaTel').removeClass('oculto');
+            $('#acaTel').addClass('block');
+            $('#phone').prop('required', true);
+        }
+        if ($("#tipo-contacto option:selected").text() === 'WhatsApp') {
+            $('#acaEmail').addClass('oculto');
+            $('#acaEmail').removeClass('block');
+            $('#acaEmail').prop('required', false);
+            $('#acaTel').addClass('oculto');
+            $('#acaTel').removeClass('block');
+            $('#phone').prop('required', false);
+        }
+    }
+
     // SCROLL PANTALLA
     var altoPantalla = $(window).height();
     var altoBarra = $('.navegacion-principal').innerHeight();
@@ -57,25 +60,6 @@ $(document).ready(function() {
         }
     });
 
-
-    // DatePicker
-    var date_input_pick = $('input[name="pick-up-date"]');
-    var date_input_drop = $('input[name="drop-off-date"]');
-    var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
-    var options = {
-        format: 'dd/mm/yyyy',
-        minDate: '1',
-        useCurrent: false,
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-        startDate: '0'
-    };
-    date_input_pick.datepicker(options);
-    date_input_drop.datepicker(options);
-});
-
-$(function() {
     var d = new Date();
     var mes = d.getMonth() + 1;
     var dia = d.getDate();
@@ -94,29 +78,4 @@ $(function() {
     $('input[name="fechas-alquiler"]').on('cancel.daterangepicker', function(ev, picker) {
         $(this).val('');
     });
-
-});
-
-var slider = tns({
-    container: '.carousel-opiniones',
-    items: 1,
-    autoplay: true,
-    autoplayButtonOutput: false,
-    mouseDrag: true,
-    swipeAngle: false,
-    speed: 400,
-    controlsText: ['<i class="fas fa-arrow-circle-left"></i>', '<i class="fas fa-arrow-circle-right"></i>'],
-    gutter: '10',
-    controls: false,
-    nav: false,
-    responsive: {
-        // 640: {
-        //     edgePadding: 10,
-        //     gutter: 20
-
-        // },
-        991: {
-            items: 3
-        }
-    }
 });

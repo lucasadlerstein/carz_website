@@ -371,7 +371,7 @@ h3 {
 
 .banner-principal {
     position: relative;
-    height: auto;
+    /* height: auto; */
 }
 
 .banner-principal::before {
@@ -421,14 +421,8 @@ h3 {
 
 @media (min-width: 768px) {
     .info-banner {
-        padding-top: 15%;
-    }
-}
-
-@media (min-width: 991px) {
-    .info-banner {
-        padding-bottom: 20%;
-        padding-top: 20%;
+        padding-bottom: 70px;
+        padding-top: 70px;
     }
 }
 
@@ -488,11 +482,11 @@ h3 {
     -webkit-border-radius: var(--bordes);
     -moz-border-radius: var(--bordes);
     border-radius: var(--bordes);
-    margin-top: 15%;
+    margin-top: 70px;
     position: relative;
     min-height: 300px;
     box-shadow: 0px 0 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10%;
+    margin-bottom: 70px;
     text-align: left;
 }
 
@@ -768,6 +762,14 @@ h3 {
     }
 }
 
+@media (max-width: 540px) {
+    .carousel-autos,
+    .carousel-autos2,
+    .carousel-autos3 {
+        margin: 0 auto;
+    }
+}
+
 .unAuto {
     background-color: white;
     border: 2px solid transparent;
@@ -1014,6 +1016,7 @@ h3 {
     box-shadow: 0 0 0 #000;
     box-shadow: 0 0 30px rgba(0, 0, 0, .1);
     align-items: center;
+    user-select: none;
 }
 
 @media (max-width:991px) {
@@ -1289,4 +1292,69 @@ footer li:hover {
         padding-top: 3px;
         margin-right: 10px;
     }
+}
+
+
+/* Globo Wpp */
+
+.globo-wpp {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 60px;
+    z-index: 998;
+}
+
+.globo-wpp:hover {
+    -webkit-animation: latido-wpp 1.5s ease-in-out both;
+    animation: latido-wpp 1.5s ease-in-out both;
+}
+
+.globo-wpp img {
+    width: 60px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0px 0px 26px -7px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 0px 0px 26px -7px rgba(0, 0, 0, 0.63);
+    box-shadow: 0px 0px 26px -7px rgba(0, 0, 0, 0.63);
+}
+
+
+/* Buscador de aeropuertos */
+
+.autocomplete-results {
+    max-width: 80%;
+}
+
+.single-result {
+    padding: 5px;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.single-result:hover {
+    background-color: #eeeeee;
+}
+
+
+/* Carousel */
+
+.tns-controls {
+    border: none;
+}
+
+.tns-controls button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    opacity: 50%;
+}
+
+.tns-outer {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+#acaTel {
+    z-index: 999;
 }
