@@ -8,7 +8,7 @@
             showConfirmButton: false,
             timer: 1300
         });
-        gtag_report_conversion('ContactForm');
+        gtag('event', 'conversion', {'send_to': 'AW-1019430203/j8F-CNKb3eEBELuKjeYD'});
     </script>
     <?php
         }else if($_GET['mensaje'] == 'error'){
@@ -20,7 +20,7 @@
                 showConfirmButton: false,
                 timer: 1500
             });
-            gtag_report_conversion('ContactFormNotSent');
+            gtag('event', 'conversion', {'send_to': 'AW-1019430203/j8F-CNKb3eEBELuKjeYD'});
         </script>
         <?php
         }}
