@@ -534,8 +534,12 @@ h3 {
     width: 100%;
     border: 1px solid #cccccc;
     border-radius: var(--bordes);
-    padding: 10px 0 10px 10px;
+    padding: 10px;
     font-size: 16px;
+}
+
+.formulario-input:focus {
+    outline: none;
 }
 
 .icono-reloj {
@@ -701,6 +705,18 @@ h3 {
     margin-top: 60px;
 }
 
+.raya-he::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    border: 2px solid var(--colorPropio);
+    margin: 0px auto;
+    border-radius: 2px;
+    left: auto;
+    right: 15px;
+    margin-top: 60px;
+}
+
 @media (min-width: 540px) {
     .raya-izq::after {
         margin-left: 12%!important;
@@ -728,6 +744,20 @@ h3 {
         margin-top: 40px!important;
     }
 }
+
+.raya-footer-he::after {
+    margin: 0 auto;
+    margin-top: 40px!important;
+}
+
+@media (min-width: 540px) {
+    .raya-footer-he::after {
+        /* margin-right: 15px!important; */
+        margin-top: 40px!important;
+    }
+}
+
+
 
 @media (max-width: 768px) {
     .info-footer {
@@ -1357,4 +1387,16 @@ footer li:hover {
 
 #acaTel {
     z-index: 999;
+}
+
+@media (max-width: 540px){
+    .order-first-mobile {
+        order: -1;
+    }
+
+    .order-last-mobile {
+        order: 13;
+    }
+
+
 }

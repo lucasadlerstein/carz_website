@@ -86,8 +86,11 @@
                     </a>
                 </div>
                 <div class="idioma float-right">
-                    <a href="/es/">
-                        <img src="img/espanol.jpg" alt="Spanish Language">
+                    <a href="/es/" class="mx-1">
+                        <img src="img/espanol.jpg" alt="Spanish Version">
+                    </a>
+                    <a href="/he/" class="mx-1">
+                        <img src="img/israel.png" alt="Hebrew version">
                     </a>
                 </div>
             </div>

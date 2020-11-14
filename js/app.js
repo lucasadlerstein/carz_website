@@ -26,7 +26,7 @@ $(document).ready(function() {
     });
 
     function opcionElegida() {
-        if ($("#tipo-contacto option:selected").text() === 'Email') {
+        if ($("#tipo-contacto option:selected").text() === 'Email' || $("#tipo-contacto option:selected").text() === 'אימייל') {
             $('#acaEmail').removeClass('oculto');
             $('#acaEmail').addClass('block');
             $('#acaEmail').prop('required', true);
@@ -34,7 +34,7 @@ $(document).ready(function() {
             $('#acaTel').addClass('block');
             $('#phone').prop('required', true);
         }
-        if ($("#tipo-contacto option:selected").text() === 'WhatsApp') {
+        if ($("#tipo-contacto option:selected").text() === 'WhatsApp' || $("#tipo-contacto option:selected").text() === 'וואטסאפ') {
             $('#acaEmail').addClass('oculto');
             $('#acaEmail').removeClass('block');
             $('#acaEmail').prop('required', false);
