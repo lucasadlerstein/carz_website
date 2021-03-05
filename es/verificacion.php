@@ -11,6 +11,10 @@
 
         gtag('event', 'conversion', {'send_to': 'AW-1019430203/j8F-CNKb3eEBELuKjeYD'});
         
+        // Nuevo Guido 05/03/2021
+        gtag('event', 'conversion', {'send_to': 'AW-1019430203/TVUoCPis4_kBELuKjeYD'});
+
+        
     </script>
     <?php
         }else if($_GET['mensaje'] == 'error'){
