@@ -3,22 +3,63 @@ $(document).ready(function() {
     $('#tipo-contacto').click(opcionElegida);
     $('#tipo-contacto').on('blur', opcionElegida);
 
-    $('#btnBest').click(function() {
-        $('#btnBest').addClass('auto-activo');
-        $('#btnAffordable').removeClass('auto-activo');
+    // $('#btnBest').click(function() {
+    //     $('#btnBest').addClass('auto-activo');
+    //     $('#btnAffordable').removeClass('auto-activo');
+    //     $('#btnPremium').removeClass('auto-activo');
+    // });
+
+    // $('#btnAffordable').click(function() {
+    //     $('#btnAffordable').addClass('auto-activo');
+    //     $('#btnBest').removeClass('auto-activo');
+    //     $('#btnPremium').removeClass('auto-activo');
+    // });
+
+    // $('#btnPremium').click(function() {
+    //     $('#btnPremium').addClass('auto-activo');
+    //     $('#btnAffordable').removeClass('auto-activo');
+    //     $('#btnBest').removeClass('auto-activo');
+    // });
+
+    // Botones nuevos
+    $('#btnEconomico').click(function() {
+        $('#btnEconomico').addClass('auto-activo');
+        $('#btnSedan').removeClass('auto-activo');
+        $('#btnSuv').removeClass('auto-activo');
+        $('#btnMiniVan').removeClass('auto-activo');
         $('#btnPremium').removeClass('auto-activo');
     });
 
-    $('#btnAffordable').click(function() {
-        $('#btnAffordable').addClass('auto-activo');
-        $('#btnBest').removeClass('auto-activo');
+    $('#btnSedan').click(function() {
+        $('#btnSedan').addClass('auto-activo');
+        $('#btnEconomico').removeClass('auto-activo');
+        $('#btnSuv').removeClass('auto-activo');
+        $('#btnMiniVan').removeClass('auto-activo');
+        $('#btnPremium').removeClass('auto-activo');
+    });
+    
+    $('#btnSuv').click(function() {
+        $('#btnSuv').addClass('auto-activo');
+        $('#btnEconomico').removeClass('auto-activo');
+        $('#btnSedan').removeClass('auto-activo');
+        $('#btnMiniVan').removeClass('auto-activo');
+        $('#btnPremium').removeClass('auto-activo');
+    });
+
+    $('#btnMiniVan').click(function() {
+        $('#btnMiniVan').addClass('auto-activo');
+        $('#btnEconomico').removeClass('auto-activo');
+        $('#btnSedan').removeClass('auto-activo');
+        $('#btnSuv').removeClass('auto-activo');
         $('#btnPremium').removeClass('auto-activo');
     });
 
     $('#btnPremium').click(function() {
         $('#btnPremium').addClass('auto-activo');
-        $('#btnAffordable').removeClass('auto-activo');
-        $('#btnBest').removeClass('auto-activo');
+        $('#btnEconomico').removeClass('auto-activo');
+        $('#btnSedan').removeClass('auto-activo');
+        $('#btnSuv').removeClass('auto-activo');
+        $('#btnMiniVan').removeClass('auto-activo');
     });
 
     $('#carzNavegacion a').on('click', function() {

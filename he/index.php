@@ -59,6 +59,8 @@
       return false;
     }
     </script>
+
+    <script type="text/javascript" async="async" src="https://hub.fromdoppler.com/public/dhtrack.js" ></script>
 </head>
 
 <body>
@@ -249,7 +251,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group input-group oculto" id="acaTel">
-                                    <input class="formulario-input" name="telefono" type="tel" id="phone" />
+                                    <input class="formulario-input"  placeholder="מספר טלפון" name="telefono" type="tel" id="phone" />
                                     <span id="valid-msg" class="hide">✓ Valid</span>
                                     <span id="error-msg" class="hide"></span>
                                 </div>
@@ -337,155 +339,40 @@
             <div class="text-center mt-5">
                 <ul class="elegir-autos">
                     <li>
-                        <button class="boton btn-autos btn-izq" type="button" data-toggle="collapse" id="btnBest" data-target="#autosBest" aria-expanded="true" aria-controls="autosBest">
-                            הצעות משתלמות
+                        <button class="boton btn-autos btn-izq auto-activo" type="button" data-toggle="collapse" id="btnEconomico" data-target="#autosEconomico" aria-expanded="true" aria-controls="autosEconomico">
+                        רכבים במחיר מוזל 
                         </button>
                     </li>
                     <li>
-                        <button class="boton btn-autos auto-activo" type="button" data-toggle="collapse" id="btnAffordable" data-target="#autosAffordable" aria-expanded="true" aria-controls="autosAffordable">
-                            רכבים במחיר מוזל
+                        <button class="boton btn-autos" type="button" data-toggle="collapse" id="btnSedan" data-target="#autosSedan" aria-expanded="true" aria-controls="autosSedan">
+                        רכבי מנהלים 
+                        </button>
+                    </li>
+                    <li>
+                        <button class="boton btn-autos" type="button" data-toggle="collapse" id="btnSuv" data-target="#autosSuv" aria-expanded="true" aria-controls="autosSuv">
+                            SUV
+                        </button>
+                    </li>
+                    <li>
+                        <button class="boton btn-autos" type="button" data-toggle="collapse" id="btnMiniVan" data-target="#autosMiniVan" aria-expanded="true" aria-controls="autosMiniVan">
+                        רכבים עם 7 מקומות 
                         </button>
                     </li>
                     <li>
                         <button class="boton btn-autos btn-der" type="button" data-toggle="collapse" id="btnPremium" data-target="#autosPremium" aria-expanded="true" aria-controls="autosPremium">
-                            רכבי פרימיום
+                        רכבי PREMIUM
                         </button>
                     </li>
                 </ul>
             </div>
             <div class="accordion" id="autosTodos">
-                <div id="autosAffordable" class="collapse show" aria-labelledby="autosAffordable" data-parent="#autosTodos">
+                
+                <div id="autosSuv" class="collapse" aria-labelledby="autosSuv" data-parent="#autosTodos">
                     <div class="row text-center mt-4 carousel-autos">
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/economic-cars/CHEVROLET_SPARK.jpg" alt="Autos Economicos - Chevrolet Spark">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Chevrolet</h4>
-                                    <p class="modeloAuto">Spark</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>4</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>2</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/MAZDA_3.jpg" alt="Autos Economicos - Mazda 3">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Mazda</h4>
-                                    <p class="modeloAuto">3</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>3</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/CHEVROLET_MALIBU.jpg" alt="Autos Economicos - Chevrolet Malibu">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Chevrolet</h4>
-                                    <p class="modeloAuto">Malibu</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/NISSAN_ROGUE.jpg" alt="Autos Economicos - Nissan Rogue">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Nissan</h4>
-                                    <p class="modeloAuto">Rogue</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/FORD_FOCUS.jpg" alt="Autos Economicos - Ford Focus">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Ford</h4>
-                                    <p class="modeloAuto">Focus</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>2</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/economic-cars/VOLKSWAGEN_JETTA.jpg" alt="Autos Economicos - Volkswagen Jetta">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Volkswagen</h4>
-                                    <p class="modeloAuto">Jetta</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>3</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/economic-cars/BUICK_REGAL.jpg" alt="Autos Economicos - Buick Regal">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Buick</h4>
-                                    <p class="modeloAuto">Regal</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/economic-cars/CHEVROLET_EQUINOX.jpg" alt="Autos Economicos - Chevrolet Equinox">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_EQUINOX-min.png" alt="Chevrolet Equinox">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Chevrolet</h4>
@@ -494,92 +381,100 @@
                                 <div class="iconosAuto">
                                     <ul>
                                         <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/CHRYSLER_PACIFICA.jpg" alt="Autos Economicos - CHRYSLER PACIFICA">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_EDGE-min.png" alt="Ford Edge">
                                 </div>
                                 <div class="infoAuto">
-                                    <h4 class="marcaAuto">Chrysler</h4>
-                                    <p class="modeloAuto">Pacifica</p>
+                                    <h4 class="marcaAuto">Ford</h4>
+                                    <p class="modeloAuto">Edge</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
-                                        <li><i class="fas fa-users"></i><span>7</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>5</span></li>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/economic-cars/NISSAN_PATHFINDER.jpg" alt="Autos Economicos - Nissan Pathfinder">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_ESCAPE-min.png" alt="Ford Escape">
                                 </div>
                                 <div class="infoAuto">
-                                    <h4 class="marcaAuto">Nissan</h4>
-                                    <p class="modeloAuto">Pathfinder</p>
+                                    <h4 class="marcaAuto">Ford</h4>
+                                    <p class="modeloAuto">Escape</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
-                                        <li><i class="fas fa-users"></i><span>7</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="autosBest" class="collapse" aria-labelledby="autosBest" data-parent="#autosTodos">
-                    <div class="row text-center mt-4 carousel-autos2">
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/MAZDA_3.jpg" alt="Mejores Ofertas - Mazda 3">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/HYUNDAI_SANTA_FE-min.png" alt="Hyundai Santa Fe">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Hyundai</h4>
+                                    <p class="modeloAuto">Santa Fe</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/HYUNDAI_TUCSON-min.png" alt="Hyundai Tucson">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Hyundai</h4>
+                                    <p class="modeloAuto">Tucson</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/MAZDA_CX5-min.png" alt="Mazda CX5">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Mazda</h4>
-                                    <p class="modeloAuto">3</p>
+                                    <p class="modeloAuto">CX5</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
                                         <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>3</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/CHEVROLET_MALIBU.jpg" alt="Mejores Ofertas - Chevrolet Malibu">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Chevrolet</h4>
-                                    <p class="modeloAuto">Malibu</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/NISSAN_ROGUE.jpg" alt="Mejores Ofertas - Nissan Rogue">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/NISSAN_ROGUE-min.png" alt="Nissan Rogue">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Nissan</h4>
@@ -588,34 +483,53 @@
                                 <div class="iconosAuto">
                                     <ul>
                                         <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/CHRYSLER_PACIFICA.jpg" alt="Mejores Ofertas - CHRYSLER PACIFICA">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/TOYOTA_RAV4-min.png" alt="Toyota Rav 4">
                                 </div>
                                 <div class="infoAuto">
-                                    <h4 class="marcaAuto">Chrysler</h4>
-                                    <p class="modeloAuto">Pacifica</p>
+                                    <h4 class="marcaAuto">Toyota</h4>
+                                    <p class="modeloAuto">Rav 4</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
-                                        <li><i class="fas fa-users"></i><span>7</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>5</span></li>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div id="autosEconomico" class="collapse show" aria-labelledby="autosEconomico" data-parent="#autosTodos">
+                    <div class="row text-center mt-4 carousel-autos">
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/HYUNDAI_ACCENT-min.png" alt="Hyundai Accent">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Hyundai</h4>
+                                    <p class="modeloAuto">Accent</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/best-offers/FORD_FOCUS.jpg" alt="Mejores Ofertas - Ford Focus">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_FOCUS-min.png" alt="Ford Focus">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Ford</h4>
@@ -624,218 +538,363 @@
                                 <div class="iconosAuto">
                                     <ul>
                                         <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>2</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_SPARK-min.png" alt="Chevrolet Spark">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chevrolet</h4>
+                                    <p class="modeloAuto">Spark</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/MAZDA_3-min.png" alt="Mazda 3">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Mazda</h4>
+                                    <p class="modeloAuto">3</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/TOYOTA_COROLLA-min.png" alt="Toyota Corolla">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Toyota</h4>
+                                    <p class="modeloAuto">Corolla</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_CRUZE-min.png" alt="Chevrolet Cruze">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chevrolet</h4>
+                                    <p class="modeloAuto">Cruze</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_FIESTA-min.png" alt="Ford Fiesta">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Ford</h4>
+                                    <p class="modeloAuto">Fiesta</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/KIA_RIO-min.jpg" alt="Kia RIO">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Kia</h4>
+                                    <p class="modeloAuto">Rio</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/NISSAN_VERSA-min.png" alt="Nissan Versa">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Nissan</h4>
+                                    <p class="modeloAuto">Versa</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/KIA_SOUL-min.png" alt="Kia Soul">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Kia</h4>
+                                    <p class="modeloAuto">Soul</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="autosPremium" class="collapse" aria-labelledby="autosPremium" data-parent="#autosTodos">
-                    <div class="row text-center mt-4 carousel-autos3">
+                <div id="autosSedan" class="collapse" aria-labelledby="autosSedan" data-parent="#autosTodos">
+                    <div class="row text-center mt-4 carousel-autos2">
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/CHRYSLER_300.jpg" alt="Autos Premium - Chrysler 300">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Chrysler</h4>
-                                    <p class="modeloAuto">300</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>5</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/CADILAC_CTS.jpg" alt="Autos Premium - Cadilac CTS">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Cadilac</h4>
-                                    <p class="modeloAuto">CTS</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/FORD_MUSTANG_GT.jpg" alt="Autos Premium - Ford Mustang GT">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Ford</h4>
-                                    <p class="modeloAuto">Mustang GT</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>4</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>2</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/CHEVROLET_CAMARO_SS.jpg" alt="Autos Premium - Chevrolet Camaro SS">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_MALIBU-min.png" alt="Chevrolet Malibu">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Chevrolet</h4>
-                                    <p class="modeloAuto">Camaro SS</p>
+                                    <p class="modeloAuto">Malibu</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
-                                        <li><i class="fas fa-users"></i><span>4</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>1</span></li>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/DODGE_CHALLENGER.jpg" alt="Autos Premium - Dodge Challenger">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_FUSION-min.png" alt="Ford Fusion">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Ford</h4>
+                                    <p class="modeloAuto">Fusion</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/HYUNDAI_ELANTRA-min.png" alt="Hyundai Elantra">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Hyundai</h4>
+                                    <p class="modeloAuto">Elantra</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/NISSAN_ALTIMA-min.png" alt="Nissan Altima">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Nissan</h4>
+                                    <p class="modeloAuto">Altima</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/TOYOTA_CAMRY-min.png" alt="Toyota Camry">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Toyota</h4>
+                                    <p class="modeloAuto">Camry</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/VOLKSWAGEN_JETTA-min.png" alt="Volkswagen Jetta">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Volkswagen</h4>
+                                    <p class="modeloAuto">Jetta</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/VOLKSWAGEN_PASSAT-min.png" alt="Wolkswagen Passat">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Wolkswagen</h4>
+                                    <p class="modeloAuto">Passat</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/BUICK_REGAL-min.png" alt="Buick Regal">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Buick</h4>
+                                    <p class="modeloAuto">Regal</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_IMPALA-min.png" alt="Chevrolet Impala">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chevrolet</h4>
+                                    <p class="modeloAuto">Impala</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="autosMiniVan" class="collapse" aria-labelledby="autosMiniVan" data-parent="#autosTodos">
+                    <div class="row text-center mt-4 carousel-autos2">
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHRYSLER_PACIFICA-min.png" alt="Chrysler Pacifica">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chrysler</h4>
+                                    <p class="modeloAuto">Pacifica</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHRYSLER_VOYAGER-min.png" alt="Chrysler Voyager">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chrysler</h4>
+                                    <p class="modeloAuto">Voyager</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/DODGE_GRAND_CARAVAN-min.png" alt="Dodge Gran Caravan">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Dodge</h4>
-                                    <p class="modeloAuto">Challenger</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>3</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/RANGE_ROVER_EVOQUE.jpg" alt="Autos Premium - Range Rover Evoque">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Range Rover</h4>
-                                    <p class="modeloAuto">Evoque</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/RANGE_ROVER_VELAR.jpg" alt="Autos Premium - Range Rover Velar">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Range Rover</h4>
-                                    <p class="modeloAuto">Velar</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/CADILAC_XT5.jpg" alt="Autos Premium - Cadilac XT5">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Cadilac</h4>
-                                    <p class="modeloAuto">XT5</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/JAGUAR_XF.jpg" alt="Autos Premium - Jaguar XF">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Jaguar</h4>
-                                    <p class="modeloAuto">XF</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/CADILAC_ESCALADE.jpg" alt="Autos Premium - Cadilac Escalade">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">Cadilac</h4>
-                                    <p class="modeloAuto">Escalade</p>
+                                    <p class="modeloAuto">Gran Caravan</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
                                         <li><i class="fas fa-users"></i><span>7</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/GMC_YUKON.jpg" alt="Autos Premium - GMC Yukon">
-                                </div>
-                                <div class="infoAuto">
-                                    <h4 class="marcaAuto">GMC</h4>
-                                    <p class="modeloAuto">Yukon</p>
-                                </div>
-                                <div class="iconosAuto">
-                                    <ul>
-                                        <li><i class="fas fa-users"></i><span>7</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
-                                    </ul>
-                                </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
-                            <div class="unAuto">
-                                <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/CHEVROLET_SUBURBAN.jpg" alt="Autos Premium - Chevrolet Suburban">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_SUBURBAN-min.png" alt="Chevrolet Suburban">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Chevrolet</h4>
@@ -844,32 +903,342 @@
                                 <div class="iconosAuto">
                                     <ul>
                                         <li><i class="fas fa-users"></i><span>7</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>6</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="../img/autos/premium-cars/INFINITY_QX50.jpg" alt="Autos Premium - Infinity QX50">
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_TAHOE-min.png" alt="Chevrolet Tahoe">
                                 </div>
                                 <div class="infoAuto">
-                                    <h4 class="marcaAuto">Infinity</h4>
-                                    <p class="modeloAuto">QX50</p>
+                                    <h4 class="marcaAuto">Chevrolet</h4>
+                                    <p class="modeloAuto">Tahoe</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_EXPEDITION-min.png" alt="Ford Expedition">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Ford</h4>
+                                    <p class="modeloAuto">Expedition</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_EXPLORER-min.png" alt="Ford Explorer">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Ford</h4>
+                                    <p class="modeloAuto">Explorer</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/GMC_YUKON-min.png" alt="GMC Yukon">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">GMC</h4>
+                                    <p class="modeloAuto">Yukon</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/NISSAN_PATHFINDER-min.png" alt="Nissan Pathfinder">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Nissan</h4>
+                                    <p class="modeloAuto">Pathfinder</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="autosPremium" class="collapse" aria-labelledby="autosPremium" data-parent="#autosTodos">
+                    <div class="row text-center mt-4 carousel-autos2">
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CADILLAC_XTS-min.png" alt="Cadilac CTS">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Cadilac</h4>
+                                    <p class="modeloAuto">CTS</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
                                         <li><i class="fas fa-users"></i><span>5</span></li>
-                                        <li class="no-border"><i class="fas fa-suitcase"></i><span>4</span></li>
                                     </ul>
                                 </div>
-                                <a href="#formulario-contacto" class="btn-reservar">הזמן עכשיו</a>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CADILLAC_XT5-min.png" alt="Cadilac XT5">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Cadilac</h4>
+                                    <p class="modeloAuto">XT5</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_CAMARO_CONVERTIBLE-min.png" alt="Chevrolet Camaro Convertible">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chevrolet</h4>
+                                    <p class="modeloAuto">Camaro Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHEVROLET_CAMARO_SS-min.png" alt="Chevrolet Camaro SS">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chevrolet</h4>
+                                    <p class="modeloAuto">Camaro SS</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/CHRYSLER_300-min.png" alt="Chrysler 300">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Chrysler</h4>
+                                    <p class="modeloAuto">300</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/FORD_MUSTANG_CONVERTIBLE-min.png" alt="Ford Mustang Convertible">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Ford</h4>
+                                    <p class="modeloAuto">Mustang Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/INFINITI_QX60-min.png" alt="Infiniti QX60">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Infiniti</h4>
+                                    <p class="modeloAuto">QX60</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/JAGUAR_XE-min.png" alt="Jaguar XE">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Jaguar</h4>
+                                    <p class="modeloAuto">XE</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/JAGUAR_XF-min.png" alt="Jaguar XF">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Jaguar</h4>
+                                    <p class="modeloAuto">XF</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/JEEP_WRANGLER_4_DOOR-min.png" alt="Jeep Wrangler">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Jeep</h4>
+                                    <p class="modeloAuto">Wrangler</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/PORSCHE_MACAN-min.png" alt="Porsche Macan">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Porsche</h4>
+                                    <p class="modeloAuto">Macan</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/RAM-min.png" alt="Ram">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Ram</h4>
+                                    <!-- <p class="modeloAuto">Wrangler</p> -->
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/RANGE_ROVER_VELAR-min.png" alt="Range Rover Velar">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Range Rover</h4>
+                                    <p class="modeloAuto">Velar</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="../img/autos-052021/RANGE_ROVER_EVOQUE-min.png" alt="Range Rover Evoque">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Range Rover</h4>
+                                    <p class="modeloAuto">Evoque</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>

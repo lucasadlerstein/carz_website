@@ -811,6 +811,14 @@ h3 {
     margin-bottom: 30px;
 }
 
+.unAuto div:first-of-type {
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
 .unAuto:hover {
     border: 2px solid var(--colorPropio);
 }
@@ -818,6 +826,7 @@ h3 {
 .unAuto img {
     margin: 15px auto;
     width: 80%;
+    
 }
 
 @media (min-width: 991px) {
@@ -854,8 +863,7 @@ h3 {
 }
 
 .iconosAuto li {
-    width: 50%;
-    border-right: 1px solid #cccccc;
+    width: 100%;    
     font-size: 19px;
     padding: 5px;
     color: black;
