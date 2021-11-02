@@ -1597,6 +1597,40 @@ if(isset($_GET)) {
         </a>
     </div>
 
+    <?php
+    $date_now = date("Y-m-d");
+
+    if ($date_now > '2021-10-31') {
+        $imagen = null;
+        if($date_now < '2021-11-04') {
+            // Banner lunes
+            $imagen = '2021-lunes.jpg';
+        } else if ($date_now < '2021-11-06') {
+            // Banner jueves
+            $imagen = '2021-jueves.jpg';
+        } else {
+            $imagen = null;
+        }
+        if($imagen != null) {
+            ?>
+            <div class="modal fade" id="modalCyberMonday" tabindex="-1" role="dialog" aria-labelledby="modalCyberMondayTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 650px;">
+                            <div class="modal-content" style="margin: 0 0 0 0; padding: 0 0 0 0; width: 99%;">
+                                <div class="modal-body p-0">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height: 0; position: relative; top: 10px; left: -10px;">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <a href="https://wa.link/w5lf0x" target="_blank">
+                                        <img alt="CyberMonday 2021" src="./../img/<?php echo $imagen ?>" style="width: 100%; height: auto;" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+        }
+    } ?>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -1612,7 +1646,12 @@ if(isset($_GET)) {
     <script type="text/javascript" src="../js/app.js"></script>
     <script type="text/javascript" src="../js/func.js"></script>
     <?php require_once 'verificacion.php'; ?>
-    
+
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#modalCyberMonday').modal('show');
+        });
+    </script>    
     
     <!-- Facebook Pixel Code -->
     <script>
