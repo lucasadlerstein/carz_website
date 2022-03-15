@@ -30,7 +30,7 @@ if($via == 'wp'){
 }else{
     if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
         
-    $address = "contacto@carzrental.net";
+    $address = "info@carzrental.com";
     $e_subject = 'Carz Rental - Formulario de Contacto';
         
     $e_body = "Hola, quiero recibir más información para alquilar un auto en EEUU." . PHP_EOL . PHP_EOL;

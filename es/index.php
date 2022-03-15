@@ -100,7 +100,7 @@ if(isset($_GET)) {
                     <a onclick="return gtag_report_conversion('<?php echo $wpLink ?>');" href="<?php echo $wpLink ?>" target="_blank">
                         <i class="fab fa-lg fa-whatsapp"></i>
                     </a>
-                    <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
+                    <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com">
                         <i class="fas fa-lg fa-envelope"></i>
                     </a>
                 </div>
@@ -150,7 +150,7 @@ if(isset($_GET)) {
                             cargo.
                         </p>
                         <div class="mt-5">
-                            <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" class="boton btn-transparente mr-5 no-mobile">
+                            <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com" class="boton btn-transparente mr-5 no-mobile">
                                 <i class="las la-envelope"></i> Enviar Email
                             </a>
                             <a onclick="return gtag_report_conversion('<?php echo $wpLink ?>');" href="<?php echo $wpLink ?>" target="_blank" class="boton btn-transparente">
@@ -1516,8 +1516,8 @@ if(isset($_GET)) {
                         <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
                             <i class="fab fa-lg	fa-whatsapp"></i> +1 (347) 899‑3389
                         </a>
-                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" target="_blank">
-                            <i class="far fa-lg	fa-envelope"></i> info@carzrental.net
+                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com" target="_blank">
+                            <i class="far fa-lg	fa-envelope"></i> info@carzrental.com
                         </a>
 
                     </div>
@@ -1556,7 +1556,7 @@ if(isset($_GET)) {
                         <a onclick="return gtag_report_conversion('<?php echo $wpLink ?>');" href="<?php echo $wpLink ?>" target="_blank">
                             <i class="fab fa-lg fa-whatsapp"></i>
                         </a>
-                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
+                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com">
                             <i class="fas fa-lg fa-envelope"></i>
                         </a>
                     </div>
