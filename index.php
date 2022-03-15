@@ -83,7 +83,7 @@
                     <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
                         <i class="fab fa-lg fa-whatsapp"></i>
                     </a>
-                    <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
+                    <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com">
                         <i class="fas fa-lg fa-envelope"></i>
                     </a>
                 </div>
@@ -132,7 +132,7 @@
                             Our mission is to give you the best price, and overall superb experience.<br> Compare our offer to any other, we beat them all!<br> Contact us today to get a risk free quote
                         </p>
                         <div class="mt-5">
-                            <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" target="_blank" class="boton btn-transparente mr-5 no-mobile">
+                            <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com" target="_blank" class="boton btn-transparente mr-5 no-mobile">
                                 <i class="las la-envelope"></i> Send Email
                             </a>
                             <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank" class="boton btn-transparente">
@@ -166,6 +166,30 @@
                                     <h4 class="titulo-input">PICK-UP & DROP-OFF DATES</h4>
                                     <input placeholder="DD/MM/YYYY - DD/MM/YYYY" class="formulario-input" type="text" name="fechas-alquiler" id="fechas-alq" value="" required/>
                                     <i class="fa fa-calendar icono-calendario"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <h4 class="titulo-input">CAR CATEGORIES</h4>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <select class="custom-select mr-sm-2 formulario-input" style="height:auto;" name="categoria" required>
+                                                <option value="Compact / Economy">Compact / Economy</option>
+                                                <option value="Intermediate / Mid-size / Standard">Intermediate / Mid-size / Standard</option>
+                                                <option value="Full-size / Premium">Full-size / Premium</option>
+                                                <option value="Luxury">Luxury</option>
+                                                <option value="Convertible">Convertible</option>
+                                                <option value="Pickup">Pickup</option>
+                                                <option value="Compact SUV - 5 PAX">Compact SUV - 5 PAX</option>
+                                                <option value="Intermediate / Mid-size / Standard SUV - 5 PAX">Intermediate / Mid-size / Standard SUV - 5 PAX</option>
+                                                <option value="Premium / Luxury SUV - 5 PAX">Premium / Luxury SUV - 5 PAX</option>
+                                                <option value="Standard SUV - 7 PAX">Standard SUV - 7 PAX</option>
+                                                <option value="Premium / Luxury SUV - 7 PAX">Premium / Luxury SUV - 7 PAX </option>
+                                                <option value="Minivan 7 PAX">Minivan 7 PAX</option>
+                                                <option value="Passenger van - 12 PAX">Passenger van - 12 PAX</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -374,7 +398,7 @@
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/CHEVROLET_EQUINOX-min.png" alt="Chevrolet Equinox">
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/CHEVROLET_EQUINOX.png" alt="Chevrolet Equinox">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Chevrolet</h4>
@@ -498,6 +522,23 @@
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Toyota</h4>
                                     <p class="modeloAuto">Rav 4</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/Jeep_Grand_Cherokee.png" alt="Jeep Grand Cherokee">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Jeep</h4>
+                                    <p class="modeloAuto">Grand Cherokee</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
@@ -838,6 +879,24 @@
                                 <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
                             </div>
                         </div>
+
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/NISSAN_KICKS.png" alt="Nissan Kicks">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Nissan</h4>
+                                    <p class="modeloAuto">Kics</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="autosMiniVan" class="collapse" aria-labelledby="autosMiniVan" data-parent="#autosTodos">
@@ -986,6 +1045,23 @@
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Nissan</h4>
                                     <p class="modeloAuto">Pathfinder</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>7</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/VOLKSWAGEN_ATLAS.png" alt="Volkswagen Atlas">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Volkswagen</h4>
+                                    <p class="modeloAuto">Atlas</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
@@ -1190,10 +1266,11 @@
                         <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
                             <div class="unAuto">
                                 <div>
-                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/RAM-min.png" alt="Ram">
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/RAM-min.png" alt="Ram 1500">
                                 </div>
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Ram</h4>
+                                    <p class="modeloAuto">1500</p>
                                     <!-- <p class="modeloAuto">Wrangler</p> -->
                                 </div>
                                 <div class="iconosAuto">
@@ -1229,6 +1306,363 @@
                                 <div class="infoAuto">
                                     <h4 class="marcaAuto">Range Rover</h4>
                                     <p class="modeloAuto">Evoque</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_3_Series.png" alt="BMW 3 Series">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">3 Series</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/MERCEDES_A_CLASS.png" alt="Mercedes Benz A Class">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Mercedes-Benz</h4>
+                                    <p class="modeloAuto">A Class</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/Volvo_S90.png" alt="Volvo S90">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Volvo</h4>
+                                    <p class="modeloAuto">S90</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_2_Series_Coupe.png" alt="BMW 2 Series Coupé">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">2 Series Coupé</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_SERIES_7.png" alt="BMW 7 Series">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">7 Series</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_X1.png" alt="BMW X1">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">X1</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_X3.png" alt="BMW X3">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">X3</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/MERCEDES_GLE.png" alt="Mercedes Benz GLE">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Mercedes Benz</h4>
+                                    <p class="modeloAuto">GLE</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/RANGE_ROVER_SPORT.png" alt="Range Rover Sport">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Range Rover</h4>
+                                    <p class="modeloAuto">Sport</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/MERCEDES_BENZ_G_CLASS.png" alt="Mercedes Benz G Class">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Mercedes Benz</h4>
+                                    <p class="modeloAuto">G Class</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_X7.png" alt="BMW X7">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">X7</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/MINI_COOPER_CONVERTIBLE.png" alt="Mini Cooper Convertible">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Mini Cooper</h4>
+                                    <p class="modeloAuto">Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/MERCEDES_SL_Convertible.png" alt="Mercedes Benz SL Convertible">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Mercedes Benz</h4>
+                                    <p class="modeloAuto">SL Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_Z4_CONVERTIBLE.png" alt="BMW Z4 CONVERTIBLE">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">Z4 Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_8_SERIES_CONVERTIBLE.png" alt="BMW 8 Series Convertible">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">8 Series Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_8_SERIES_CONVERTIBLE.png" alt="BMW 8 Series Convertible">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">8 Series Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/JAGUAR_F_TYPE_CONVERTIBLE.png" alt="Jaguar F-Type Convertible">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Jaguar</h4>
+                                    <p class="modeloAuto">F-Type Convertible</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/DODGE_CHARGER_RT.png" alt="Dodge Charger R/T">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Dodge</h4>
+                                    <p class="modeloAuto">Charger R/T</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/jaguar-f-type-coupe.png" alt="Jaguar F-Type Coupe">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">Jaguar</h4>
+                                    <p class="modeloAuto">F-Type Coupe</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_4_Series_Coupe.png" alt="BMW 4 Series Coupe">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">4 Series Coupe</p>
+                                </div>
+                                <div class="iconosAuto">
+                                    <ul>
+                                        <li><i class="fas fa-users"></i><span>5</span></li>
+                                    </ul>
+                                </div>
+                                <a href="#formulario-contacto" class="btn-reservar">Book Now</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 slide-item">
+                            <div class="unAuto">
+                                <div>
+                                    <img loading="lazy" class="auto-movimiento" src="img/autos-052021/BMW_SERIES_8_COUPE.png" alt="BMW 8 Series Coupe">
+                                </div>
+                                <div class="infoAuto">
+                                    <h4 class="marcaAuto">BMW</h4>
+                                    <p class="modeloAuto">8 Series Coupe</p>
                                 </div>
                                 <div class="iconosAuto">
                                     <ul>
@@ -1576,8 +2010,8 @@
                         <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
                             <i class="fab fa-lg	fa-whatsapp"></i> +1 (347) 899‑3389
                         </a>
-                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" target="_blank">
-                            <i class="far fa-lg	fa-envelope"></i> info@carzrental.net
+                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com" target="_blank">
+                            <i class="far fa-lg	fa-envelope"></i> info@carzrental.com
                         </a>
 
                     </div>
@@ -1616,7 +2050,7 @@
                         <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
                             <i class="fab fa-lg fa-whatsapp"></i>
                         </a>
-                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
+                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com">
                             <i class="fas fa-lg fa-envelope"></i>
                         </a>
                     </div>
@@ -1680,7 +2114,7 @@
             <img src="img/whatsapp_logo.jpg" alt="Contact Us - WhatsApp">
         </a>
     </div>
-
+    
     <?php
     $date_now = date("Y-m-d");
 
@@ -1705,7 +2139,7 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                     <a href="https://wa.link/w5lf0x" target="_blank">
-                                        <img alt="CyberMonday 2021" src="/img/<?php echo $imagen ?>" style="width: 100%; height: auto;" />
+                                        <img alt="CyberMonday 2021" src="img/<?php echo $imagen ?>" style="width: 100%; height: auto;" />
                                     </a>
                                 </div>
                             </div>
@@ -1731,13 +2165,13 @@
     <script type="text/javascript" src="js/func.js"></script>
     
     <?php require_once 'verificacion.php'; ?>
-   
+    
     <script type="text/javascript">
         $(window).on('load', function() {
             $('#modalCyberMonday').modal('show');
         });
-    </script>    
-
+    </script> 
+    
      <!-- Facebook Pixel Code -->
     <script>
         ! function(f, b, e, v, n, t, s) {

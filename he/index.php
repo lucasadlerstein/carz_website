@@ -147,6 +147,30 @@
                                     <i class="fa fa-calendar icono-calendario"></i>
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <h4 class="titulo-input">קטגוריות רכבים</h4>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <select class="custom-select mr-sm-2 formulario-input" style="height:auto;" name="categoria" required>
+                                                <option value="רכב אקונומי / קומפקט">רכב אקונומי / קומפקט</option>
+                                                <option value="רכב משפחתי בינוני">רכב משפחתי בינוני</option>
+                                                <option value="רכב מנהלים">רכב מנהלים</option>
+                                                <option value="רכב מנהלים פרימיום יוקרתי">רכב מנהלים פרימיום יוקרתי</option>
+                                                <option value="רכב ספורט קבריולט (גג נפתח)">רכב ספורט קבריולט (גג נפתח)</option>
+                                                <option value="רכב פיקאפ (טנדר)">רכב פיקאפ (טנדר)</option>
+                                                <option value="רכב ג'יפ קטן ל 5 נוסעים">רכב ג'יפ קטן ל 5 נוסעים</option>
+                                                <option value="רכב ג'יפ בינוני ל 5 נוסעים">רכב ג'יפ בינוני ל 5 נוסעים</option>
+                                                <option value="רכב ג'יפ פרימיום יוקרתי ל 5 נוסעים">רכב ג'יפ פרימיום יוקרתי ל 5 נוסעים</option>
+                                                <option value="רכב ג'יפ ל 7 נוסעים">רכב ג'יפ ל 7 נוסעים</option>
+                                                <option value="רכב ג'יפ פרימיום יוקרתי ל 7 נוסעים">רכב ג'יפ פרימיום יוקרתי ל 7 נוסעים </option>
+                                                <option value="מיני ואן ל 7 נוסעים">מיני ואן ל 7 נוסעים</option>
+                                                <option value="ואן ל 12 נוסעים">ואן ל 12 נוסעים</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <h4 class="titulo-input">שעת איסוף</h4>

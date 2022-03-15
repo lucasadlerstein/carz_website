@@ -2,6 +2,7 @@
 $pickup = $_POST['pick-up'];
 $dropoff = $_POST['drop-off'];
 $dates = $_POST['fechas-alquiler'];
+$categoria = $_POST['categoria'];
 $pickhora = $_POST['pick-hora'];
 $pickmin = $_POST['pick-min'];
 $drophora = $_POST['drop-hora'];
@@ -22,7 +23,7 @@ if($age == '19'){
     $driverEmail = "El conductor es mayor de 25 años";
 }
 
-$texto = "Hola,%20quisiera%20alquilar%20un%20auto%20en%20EEUU.%0D$dates%0DPick-Up:%20$pickup%20-%20$pickuptime%0DDrop-Off:%20$dropoff%20-%20$dropofftime%0D$driver";
+$texto = "Hola,%20quisiera%20alquilar%20un%20auto%20en%20EEUU.%0D$dates%0DPick-Up:%20$pickup%20-%20$pickuptime%0DDrop-Off:%20$dropoff%20-%20$dropofftime%0D$categoria%0D$driver";
 
 if($via == 'wp'){
     header("Location: https://wa.me/13478993389?text=$texto");
@@ -34,7 +35,7 @@ if($via == 'wp'){
         
     $e_body = "Hola, quiero recibir más información para alquilar un auto en EEUU." . PHP_EOL . PHP_EOL;
     $e_content = $dates . PHP_EOL;
-    $e_content .= "Pick-Up: $pickup - $pickuptime" . PHP_EOL . "Drop-Off: $dropoff - $dropofftime" . PHP_EOL;
+    $e_content .= "Pick-Up: $pickup - $pickuptime" . PHP_EOL . "Drop-Off: $dropoff - $dropofftime" . PHP_EOL . "Categoría: $categoria" . PHP_EOL;
     $e_content .= $driverEmail . PHP_EOL . PHP_EOL;
     $e_reply = "Datos de contacto: $email - $telefono";
 

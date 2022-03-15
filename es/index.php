@@ -184,6 +184,30 @@ if(isset($_GET)) {
                                     <i class="fa fa-calendar icono-calendario"></i>
                                 </div>
                             </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <h4 class="titulo-input">CATEGORÍA DE AUTO</h4>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <select class="custom-select mr-sm-2 formulario-input" style="height:auto;" name="categoria" required>
+                                                <option value="COMPACTO / ECONOMICO">COMPACTO / ECONOMICO</option>
+                                                <option value="SEDAN MEDIANO / STANDARD">SEDAN MEDIANO / STANDARD</option>
+                                                <option value="SEDAN FULL SIZE / PREMIUM">SEDAN FULL SIZE / PREMIUM</option>
+                                                <option value="SEDAN / LUJO">SEDAN / LUJO</option>
+                                                <option value="CONVERTIBLE">CONVERTIBLE</option>
+                                                <option value="PICKUP">PICKUP</option>
+                                                <option value="CAMIONETA SUV 5 PAX / COMPACTO">CAMIONETA SUV 5 PAX / COMPACTO</option>
+                                                <option value="CAMIONETA SUV PAX / MEDIANA">CAMIONETA SUV PAX / MEDIANA</option>
+                                                <option value="CAMIONETA SUV 5 PAX / PREMIUM - LUJO">CAMIONETA SUV 5 PAX / PREMIUM - LUJO</option>
+                                                <option value="CAMIONETA SUV 7 PAX / STANDARD">CAMIONETA SUV 7 PAX / STANDARD</option>
+                                                <option value="CAMIONETA SUV 7 PAX / PREMIUM-LUJO">CAMIONETA SUV 7 PAX / PREMIUM-LUJO </option>
+                                                <option value="MINIVAN 7 PAX">MINIVAN 7 PAX </option>
+                                                <option value="VAN 12 PAX">VAN 12 PAX </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <h4 class="titulo-input">HORA DE RECOGIDA</h4>
@@ -1596,7 +1620,7 @@ if(isset($_GET)) {
             <img src="../img/whatsapp_logo.jpg" alt="Contactanos 24/7 - WhatsApp">
         </a>
     </div>
-
+    
     <?php
     $date_now = date("Y-m-d");
 
@@ -1611,8 +1635,8 @@ if(isset($_GET)) {
         } else {
             $imagen = null;
         }
-        if($imagen != null) {
-            ?>
+        
+        if($imagen != null) { ?>
             <div class="modal fade" id="modalCyberMonday" tabindex="-1" role="dialog" aria-labelledby="modalCyberMondayTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 650px;">
                             <div class="modal-content" style="margin: 0 0 0 0; padding: 0 0 0 0; width: 99%;">
@@ -1646,12 +1670,12 @@ if(isset($_GET)) {
     <script type="text/javascript" src="../js/app.js"></script>
     <script type="text/javascript" src="../js/func.js"></script>
     <?php require_once 'verificacion.php'; ?>
-
+    
     <script type="text/javascript">
         $(window).on('load', function() {
             $('#modalCyberMonday').modal('show');
         });
-    </script>    
+    </script>  
     
     <!-- Facebook Pixel Code -->
     <script>
