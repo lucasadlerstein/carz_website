@@ -26,7 +26,7 @@ if($age == '19'){
 $texto = "Hola,%20quisiera%20alquilar%20un%20auto%20en%20EEUU.%0D$dates%0DPick-Up:%20$pickup%20-%20$pickuptime%0DDrop-Off:%20$dropoff%20-%20$dropofftime%0D$categoria%0D$driver";
 
 if($via == 'wp'){
-    header("Location: https://wa.me/13478993389?text=$texto");
+    header("Location: https://wa.me/17868208222?text=$texto");
 }else{
     if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
         

@@ -2,12 +2,12 @@
 
 if(isset($_GET)) {
     if ($_GET['f'] != '') {
-        $wpLink = "https://api.whatsapp.com/send?phone=13478993389&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20(" . $_GET['f']  . ")%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
+        $wpLink = "https://api.whatsapp.com/send?phone=17868208222&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20(" . $_GET['f']  . ")%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
     } else {
-        $wpLink = "https://api.whatsapp.com/send?phone=13478993389&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
+        $wpLink = "https://api.whatsapp.com/send?phone=17868208222&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
     }
 } else {
-    $wpLink = "https://api.whatsapp.com/send?phone=13478993389&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
+    $wpLink = "https://api.whatsapp.com/send?phone=17868208222&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
 }
 
 ?>
@@ -87,7 +87,7 @@ if(isset($_GET)) {
     <div class="barra" id="inicio">
         <div class="container">
             <div class="izquierda-barra">
-                <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank" class="texto-negro"><i class="fab fa-whatsapp texto-negro"></i>Soporte 24/7 - WhatsApp</a>
+                <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank" class="texto-negro"><i class="fab fa-whatsapp texto-negro"></i>Soporte 24/7 - WhatsApp</a>
             </div>
             <div class="derecha-barra">
                 <div class="logos float-left">
@@ -1513,8 +1513,8 @@ if(isset($_GET)) {
                 <div class="col-lg-9 col-md-12">
                     <div class="soporte foot-flex">
                         <h5>Soporte 24/7</h5>
-                        <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
-                            <i class="fab fa-lg	fa-whatsapp"></i> +1 (347) 899‑3389
+                        <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
+                            <i class="fab fa-lg	fa-whatsapp"></i> +1 (786) 820‑8222
                         </a>
                         <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com" target="_blank">
                             <i class="far fa-lg	fa-envelope"></i> info@carzrental.com
@@ -1584,7 +1584,7 @@ if(isset($_GET)) {
                 <div class="col-md-3 col-sm-6 info-footer">
                     <h5 class="titulo-footer raya raya-footer">Soporte</h5>
                     <!-- <p>¿Necesita ayuda?</p> -->
-                    <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" class="un-link no-margin" target="_blank">
+                    <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" class="un-link no-margin" target="_blank">
                         <p>¿Necesita ayuda? Haga clic aquí para chatear con un representante de atención al cliente a través de WhatsApp.</p>
                     </a>
                 </div>

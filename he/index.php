@@ -67,7 +67,7 @@
     <div class="barra" id="inicio">
         <div class="container">
             <div class="izquierda-barra">
-                <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank" class="texto-negro"><i class="fab fa-whatsapp texto-negro"></i>תמיכה בוואטסאפ 24/7</a>
+                <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank" class="texto-negro"><i class="fab fa-whatsapp texto-negro"></i>תמיכה בוואטסאפ 24/7</a>
             </div>
             <div class="derecha-barra">
                 <div class="logos float-left">
@@ -77,7 +77,7 @@
                     <a href="https://www.instagram.com/carz_rental" target="_blank">
                         <i class="fab fa-lg fa-instagram"></i>
                     </a>
-                    <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
+                    <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
                         <i class="fab fa-lg fa-whatsapp"></i>
                     </a>
                     <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
@@ -306,7 +306,7 @@
                             <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" class="boton ml-5 btn-transparente no-mobile">
                                 <i class="las la-envelope"></i>שלח אימייל
                             </a>
-                            <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank" class="boton btn-transparente">
+                            <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank" class="boton btn-transparente">
                                 <i class="lab la-whatsapp"></i>שלח וואטסאפ
                             </a>
                         </div>
@@ -1520,8 +1520,8 @@
                 <div class="col-lg-9 col-md-12">
                     <div class="soporte foot-flex">
                         <h5>תמיכה - 24/7</h5>
-                        <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
-                            <i class="fab fa-lg	fa-whatsapp"></i> +1 (347) 899‑3389
+                        <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
+                            <i class="fab fa-lg	fa-whatsapp"></i> +1 (786) 820-8222
                         </a>
                         <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" target="_blank">
                             <i class="far fa-lg	fa-envelope"></i> info@carzrental.net
@@ -1560,7 +1560,7 @@
                         <a href="https://www.instagram.com/carz_rental" target="_blank">
                             <i class="fab fa-lg fa-instagram"></i>
                         </a>
-                        <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
+                        <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
                             <i class="fab fa-lg fa-whatsapp"></i>
                         </a>
                         <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
@@ -1591,7 +1591,7 @@
                 <div class="col-md-3 col-sm-6 info-footer">
                     <h5 class="titulo-footer raya-he raya-footer-he">תמיכה</h5>
                     <p>?זקוק לעזרה</p>
-                    <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" class="un-link no-margin" target="_blank">
+                    <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" class="un-link no-margin" target="_blank">
                         <p>לחץ כאן בכדי לשוחח עם נציג שירות לקוחות באמצעות הוואטסאפ</p>
                     </a>
                 </div>
@@ -1623,7 +1623,7 @@
     </div>
 
     <div class="globo-wpp">
-        <a onclick="return gtag_report_conversion('http://wa.me/13478993389');" href="http://wa.me/13478993389" target="_blank">
+        <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
             <img src="../img/whatsapp_logo.jpg" alt="Contactanos 24/7 - WhatsApp">
         </a>
     </div>
