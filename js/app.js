@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-    $('#tipo-contacto').click(opcionElegida);
-    $('#tipo-contacto').on('blur', opcionElegida);
+    // $('#tipo-contacto').click(opcionElegida);
+    // $('#tipo-contacto').on('blur', opcionElegida);
 
     // $('#btnBest').click(function() {
     //     $('#btnBest').addClass('auto-activo');
@@ -120,3 +120,11 @@ $(document).ready(function() {
         $(this).val('');
     });
 });
+
+console.log("HOLA APP");
+console.log("HOLA APP");
+console.log("HOLA APP");
+console.log("HOLA APP");
+console.log("HOLA APP");
+console.log("HOLA APP");
+console.log("HOLA APP");

@@ -1,5 +1,43 @@
-var input = document.querySelector("#phone"), errorMsg = document.querySelector("#error-msg"), validMsg = document.querySelector("#valid-msg"); // here, the index maps to the error code returned from getValidationError - see readme var errorMap = ["Invalid
-number", "Invalid country code", "Too short", "Too long", "Invalid number"]; // initialise plugin var iti = window.intlTelInput(input, { utilsScript: "../../build/js/utils.js?
-<%= time %>" }); var reset = function() { input.classList.remove("error"); errorMsg.innerHTML = ""; errorMsg.classList.add("hide"); validMsg.classList.add("hide"); }; // on blur: validate input.addEventListener('blur', function() { reset(); if (input.value.trim())
+var input = document.querySelector("#phone");
+var errorMsg = document.querySelector("#error-msg");
+var validMsg = document.querySelector("#valid-msg");
+
+// Here, the index maps to the error code returned from getValidationError - see readme
+var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+// Initialise plugin
+var iti = window.intlTelInput(input, {
+  utilsScript: "./utils.js? <%= time %>"
+});
+
+var reset = function() {
+  input.classList.remove("error");
+  errorMsg.innerHTML = "";
+  errorMsg.classList.add("hide");
+  validMsg.classList.add("hide");
+};
+
+// On blur: validate
+input.addEventListener('blur', function() {
+  reset();
+  if (input.value.trim()) {
+    if (iti.isValidNumber()) {
+      validMsg.classList.remove("hide");
+    } else {
+      input.classList.add("error");
+      var errorCode = iti.getValidationError();
+      errorMsg.innerHTML = errorMap[errorCode];
+      errorMsg.classList.remove("hide");
+    }
+  }
+});
+
+// On keyup / change flag: reset
+input.addEventListener('change', reset);
+input.addEventListener('keyup', reset);
+
+
+
+<!-- var input = document.querySelector("#phone"), errorMsg = document.querySelector("#error-msg"), validMsg = document.querySelector("#valid-msg"); // here, the index maps to the error code returned from getValidationError - see readme var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"]; // initialise plugin var iti = window.intlTelInput(input, { utilsScript: "../../build/js/utils.js? <%= time %>" }); var reset = function() { input.classList.remove("error"); errorMsg.innerHTML = ""; errorMsg.classList.add("hide"); validMsg.classList.add("hide"); }; // on blur: validate input.addEventListener('blur', function() { reset(); if (input.value.trim())
     { if (iti.isValidNumber()) { validMsg.classList.remove("hide"); } else { input.classList.add("error"); var errorCode = iti.getValidationError(); errorMsg.innerHTML = errorMap[errorCode]; errorMsg.classList.remove("hide"); } } }); // on keyup / change
-    flag: reset input.addEventListener('change', reset); input.addEventListener('keyup', reset);
+    flag: reset input.addEventListener('change', reset); input.addEventListener('keyup', reset); -->

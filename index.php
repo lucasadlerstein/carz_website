@@ -16,9 +16,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="css/intlTelInput.min.css">
+    <!-- <link rel="stylesheet" href="css/intlTelInput.min.css"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>     -->
+
+    
+    <!-- <link rel="stylesheet" href="css/intlTelInput.scss"> -->
     <link rel="stylesheet" href="css/estilos.css?v=2">
     <link rel="stylesheet" href="css/animaciones.css">
+    
+    <link rel="stylesheet" href="intlTelInput/css/intlTelInput.css">
+    <!-- <link rel="stylesheet" href="intlTelInput/css/demo.css"> -->
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
@@ -63,7 +72,7 @@
     }
     </script>
 
-<script type="text/javascript" async="async" src="https://hub.fromdoppler.com/public/dhtrack.js" ></script>
+    <script type="text/javascript" async="async" src="https://hub.fromdoppler.com/public/dhtrack.js" ></script>
 </head>
 
 <body>
@@ -276,6 +285,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                </div>
+                            <div class="col-md-6">
+                                <h4 class="titulo-input">CONTACT INFO</h4>
+                                <div class="form-group input-group" id="acaTel">
+                                    <input
+                                        id="MYphone"
+                                        required
+                                        placeholder="Phone number"
+                                        class="formulario-input"
+                                        name="telefono"
+                                        type="tel"
+                                    />
+                                    <span id="valid-msg" class="hide"></span>
+                                    <span id="error-msg" class="hide"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group" style="margin-top:40.4px">
+                                    <input required class="formulario-input" name="email" placeholder="Your email here" type="email" id="acaEmail" />
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4 mt-3">
                                 <div class="custom-control custom-radio">
@@ -295,18 +324,7 @@
                                     <option value="em">Email</option>
                                 </select>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group input-group oculto" id="acaTel">
-                                    <input placeholder="Your phone number" class="formulario-input" name="telefono" type="tel" id="phone" />
-                                    <span id="valid-msg" class="hide">✓ Valid</span>
-                                    <span id="error-msg" class="hide"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="formulario-input oculto" name="email" placeholder="Your email here" type="email" id="acaEmail" />
-                                </div>
-                            </div>
+                            
                             <div class="col-md-12 text-right">
                                 <input type="submit" class="boton btn-secundario" name="enviar" value="Contact" id="enviarForm">
                             </div>
@@ -2158,11 +2176,64 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/airport-autocomplete-js@2.0.0/dist/index.browser.min.js"></script>
-    <script type="text/javascript" src="js/intlTelInput.min.js"></script>
-    <script type="text/javascript" src="js/utils.js"></script>
-    <script type="text/javascript" src="js/isValidNumber.js.ejs"></script>
+    <!-- <script type="text/javascript" src="./js/intlTelInput.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/utils.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/isValidNumber.js.ejs"></script> -->
+    <script src="intlTelInput/js/intlTelInput.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/func.js"></script>
+
+    <script>
+        var input = document.querySelector("#MYphone"),
+            errorMsg = document.querySelector("#error-msg"),
+            validMsg = document.querySelector("#valid-msg");
+
+
+        var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+        var iti = window.intlTelInput(input, {
+            utilsScript: "intlTelInput/js/utils.js",
+            preferredCountries: ['us'],
+            nationalMode: false,
+            separateDialCode: false,
+        });
+
+        var reset = function() {
+            input.classList.remove("error");
+            errorMsg.innerHTML = "";
+            errorMsg.classList.add("hide");
+            validMsg.classList.add("hide");
+        };
+
+        input.addEventListener('blur', function() {
+            reset();
+            if (input.value.trim()) {
+                if (iti.isValidNumber()) {
+                    validMsg.classList.remove("hide");
+                } else {
+                    input.classList.add("error");
+                    var errorCode = iti.getValidationError();
+                    errorMsg.innerHTML = errorMap[errorCode];
+                    errorMsg.classList.remove("hide");
+                }
+            }
+        });
+
+        input.addEventListener('change', reset);
+        input.addEventListener('keyup', reset);
+
+        var enviarFormulario = document.querySelector("#enviarForm");
+        enviarFormulario.addEventListener('click', function(e) {
+            var seleccionado = document.getElementById("tipo-contacto");
+            var opcionElegida = seleccionado.options[seleccionado.selectedIndex].text;
+            if (opcionElegida === 'Email') {
+                if (!(iti.isValidNumber())) {
+                    e.preventDefault();
+                }
+            }
+        });
+      </script>
+
     
     <?php require_once 'verificacion.php'; ?>
     
@@ -2212,6 +2283,7 @@
     
     <!-- MetriCool -->
     <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"f77d56374cca029b831d0d5247779ceb"})});</script>
+
 </body>
 
 </html>
