@@ -31,13 +31,13 @@ if($via == 'wp'){
     if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
         
     // $address = "lucasadlerstein@gmail.com";
-    $address = "info@carzrental.net";
+    $address = "contacto@carzrental.com";
     $e_subject = 'Carz Rental Contact Form';
         
     $e_body = "Hi, I would like to receive information for my trip in the U.S." . PHP_EOL . PHP_EOL;
     $e_content = $dates . PHP_EOL;
     $e_content .= "Pick-Up: $pickup - $pickuptime" . PHP_EOL . "Drop-Off: $dropoff - $dropofftime" . PHP_EOL . "Category: $categoria" . PHP_EOL;
-    $e_content .= $driverEmail . PHP_EOL . "https://wa.me/$telefono" . PHP_EOL . PHP_EOL;
+    $e_content .= $driverEmail . PHP_EOL . "https://web.whatsapp.com/send?phone=$telefono" . PHP_EOL . PHP_EOL;
     $e_reply = "Personal Information: $email - $telefono";
 
     $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );

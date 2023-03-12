@@ -1,28 +1,12 @@
-<?php 
-
-if(isset($_GET)) {
-    if ($_GET['f'] != '') {
-        $wpLink = "https://api.whatsapp.com/send?phone=17868208222&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20(" . $_GET['f']  . ")%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
-    } else {
-        $wpLink = "https://api.whatsapp.com/send?phone=17868208222&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
-    }
-} else {
-    $wpLink = "https://api.whatsapp.com/send?phone=17868208222&text=Hola%20CarzRental%2C%20estaba%20en%20su%20sitio%20web%20y%20quisiera%20alquilar%20un%20auto%20para%20EEUU.%20%C3%89stas%20son%20las%20fechas%3A";
-}
-
-?>
-
-
 <!DOCTYPE html>
-<html lang="es" translate="no">
-
+<html lang="he" translate="no">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-U">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>CarzRental | Alquiler de autos con el mejor precio en EEUU</title>
-    <meta name="description" content="El mejor precio de alquiler de autos en EEUU, para titulares de licencias de conducir extranjeras. Garantizado." />
-    <meta name="keywords" content="alquiler de autos, alquilar auto, rentar auto, alquilar auto en estados unidos, alquilar auto en miami, alquilar auto en nueva york" />
+    <title>CarzRental | המחיר הטוב ביותר בהשכרת כל מכונית בארצות הברית, עבור נהגים בעלי רישיון נהיגה זר. באחריות.</title>
+    <meta name="description" content='המחיר הטוב ביותר לחבילות השכרת רכב מכל הסוגים בארה"ב, עבור נהגים בעלי רישיון נהיגה זר. באחריות.' />
+    <meta name="keywords" content='השכרת רכב, השכרת רכב ניו יורק, השכרת רכב מנהטן, רכב להשכרה, השכרת רכב במנהטן, השכרת רכב ארה"ב, השכרת רכב ארצות הברית, השכרת רכב בברוקלין, השכרת רכב רישיון זר, השכרת רכב ברוקלין' />
     <meta name="robots" content="index, follow" />
     <meta name="google" content="notranslate" />
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
@@ -61,7 +45,7 @@ if(isset($_GET)) {
     </script>
 
     <!-- Event snippet for Contact conversion page -->
-    <!-- <script>
+    <script>
     function gtag_report_conversion(url) {
       var callback = function () {
         if (typeof(url) != 'undefined') {
@@ -74,20 +58,16 @@ if(isset($_GET)) {
       });
       return false;
     }
-    </script> -->
-
-    <!-- Event snippet for Contacto - WhatsApp conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-1019430203/GO-CCI-AzfkBELuKjeYD', 'event_callback': callback }); return false; } </script>
+    </script>
 
     <script type="text/javascript" async="async" src="https://hub.fromdoppler.com/public/dhtrack.js" ></script>
-
 </head>
 
 <body>
     <div class="barra" id="inicio">
         <div class="container">
             <div class="izquierda-barra">
-                <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank" class="texto-negro"><i class="fab fa-whatsapp texto-negro"></i>Soporte 24/7 - WhatsApp</a>
+                <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank" class="texto-negro"><i class="fab fa-whatsapp texto-negro"></i>תמיכה בוואטסאפ 24/7</a>
             </div>
             <div class="derecha-barra">
                 <div class="logos float-left">
@@ -97,19 +77,19 @@ if(isset($_GET)) {
                     <a href="https://www.instagram.com/carz_rental" target="_blank">
                         <i class="fab fa-lg fa-instagram"></i>
                     </a>
-                    <a onclick="return gtag_report_conversion('<?php echo $wpLink ?>');" href="<?php echo $wpLink ?>" target="_blank">
+                    <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
                         <i class="fab fa-lg fa-whatsapp"></i>
                     </a>
-                    <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com">
+                    <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
                         <i class="fas fa-lg fa-envelope"></i>
                     </a>
                 </div>
                 <div class="idioma float-right">
                     <a href="../" class="mx-1">
-                        <img src="../img/usa.jpg" alt="Versión en ingles">
+                        <img src="../img/usa.jpg" alt="English version">
                     </a>
-                    <a href="../he" class="mx-1">
-                        <img src="../img/israel.png" alt="Versión en hebreo">
+                    <a href="../es" class="mx-1">
+                        <img src="../img/espanol.jpg" alt="Spanish version">
                     </a>
                 </div>
             </div>
@@ -127,11 +107,11 @@ if(isset($_GET)) {
                       </button>
                     <div class="collapse navbar-collapse justify-content-end" id="carzNavegacion">
                         <div class="navbar-nav navegacion-menu">
-                            <a href="#inicio">Inicio</a>
-                            <a href="#autos">Autos</a>
-                            <a href="#proceso">Proceso</a>
-                            <a href="#opiniones">Opiniones</a>
-                            <a href="#porque">¿Por qué CarzRental?</a>
+                            <a href="#porque">תמיד איתנו</a>
+                            <a href="#opiniones">ביקורות</a>
+                            <a href="#proceso">תהליך ההזמנה</a>
+                            <a href="#autos">מכוניות</a>
+                            <a href="#inicio">ראשי</a>
                         </div>
                     </div>
                 </nav>
@@ -142,67 +122,50 @@ if(isset($_GET)) {
     <div class="banner-principal parallax">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
-                    <div class="info-banner">
-                        <h1 class="titulo-prin">El mejor precio para alquiler de autos en EEUU, con licencias de conducir extranjeras.</h1>
-                        <p>
-                            Nuestra misión es brindarle el mejor precio, el mejor servicio y una excelente experiencia en general.<br>Compare nuestra oferta con cualquier otra: las superamos a todas.<br>Contáctenos ahora para obtener un presupuesto sin
-                            cargo.
-                        </p>
-                        <div class="mt-5">
-                            <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com" class="boton btn-transparente mr-5 no-mobile">
-                                <i class="las la-envelope"></i> Enviar Email
-                            </a>
-                            <a onclick="return gtag_report_conversion('<?php echo $wpLink ?>');" href="<?php echo $wpLink ?>" target="_blank" class="boton btn-transparente">
-                                <i class="lab la-whatsapp"></i> Enviar WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div id="formulario-contacto" class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
-                    <form name="form_contacto" action="formulario.php" class="formulario-contacto" method="POST">
+                    <form name="form_contacto" action="formulario.php" class="formulario-contacto text-right" method="POST">
                         <div class="form-titulo">
-                            <h3>¡Encuentre el auto perfecto!</h3>
+                            <h3>!למציאת המכונית המושלמת עבורך</h3>
                         </div>
                         <div class="row mt-4">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <h4 class="titulo-input mt-0">LUGAR DE RECOGIDA</h4>
-                                    <input class="formulario-input" type="text" name="pick-up" id="pick-airport" placeholder="Aeropuerto" required>
+                                    <h4 class="titulo-input mt-0">נקודת איסוף</h4>
+                                    <input class="formulario-input text-right" type="text" name="pick-up" id="pick-airport" placeholder="בחר שדה תעופה" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <h4 class="titulo-input">LUGAR DE ENTREGA</h4>
-                                    <input class="formulario-input" type="text" name="drop-off" id="drop-airport" placeholder="Aeropuerto" required>
+                                    <h4 class="titulo-input">נקודת החזרה</h4>
+                                    <input class="formulario-input text-right" type="text" name="drop-off" id="drop-airport" placeholder="בחר שדה תעופה" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <h4 class="titulo-input">FECHAS DE RECOGIDA Y ENTREGA</h4>
+                                    <h4 class="titulo-input">מועד איסוף והחזרה</h4>
                                     <input placeholder="DD/MM/YYYY - DD/MM/YYYY" class="formulario-input" type="text" name="fechas-alquiler" id="fechas-alq" value="" required/>
                                     <i class="fa fa-calendar icono-calendario"></i>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <h4 class="titulo-input">CATEGORÍA DE AUTO</h4>
+                                    <h4 class="titulo-input">קטגוריות רכבים</h4>
                                     <div class="row">
                                         <div class="col-12">
                                             <select class="custom-select mr-sm-2 formulario-input" style="height:auto;" name="categoria" required>
-                                                <option value="COMPACTO / ECONOMICO">COMPACTO / ECONOMICO</option>
-                                                <option value="SEDAN MEDIANO / STANDARD">SEDAN MEDIANO / STANDARD</option>
-                                                <option value="SEDAN FULL SIZE / PREMIUM">SEDAN FULL SIZE / PREMIUM</option>
-                                                <option value="SEDAN / LUJO">SEDAN / LUJO</option>
-                                                <option value="CONVERTIBLE">CONVERTIBLE</option>
-                                                <option value="PICKUP">PICKUP</option>
-                                                <option value="CAMIONETA SUV 5 PAX / COMPACTO">CAMIONETA SUV 5 PAX / COMPACTO</option>
-                                                <option value="CAMIONETA SUV PAX / MEDIANA">CAMIONETA SUV PAX / MEDIANA</option>
-                                                <option value="CAMIONETA SUV 5 PAX / PREMIUM - LUJO">CAMIONETA SUV 5 PAX / PREMIUM - LUJO</option>
-                                                <option value="CAMIONETA SUV 7 PAX / STANDARD">CAMIONETA SUV 7 PAX / STANDARD</option>
-                                                <option value="CAMIONETA SUV 7 PAX / PREMIUM-LUJO">CAMIONETA SUV 7 PAX / PREMIUM-LUJO </option>
-                                                <option value="MINIVAN 7 PAX">MINIVAN 7 PAX </option>
-                                                <option value="VAN 12 PAX">VAN 12 PAX </option>
+                                                <option value="רכב אקונומי / קומפקט">רכב אקונומי / קומפקט</option>
+                                                <option value="רכב משפחתי בינוני">רכב משפחתי בינוני</option>
+                                                <option value="רכב מנהלים">רכב מנהלים</option>
+                                                <option value="רכב מנהלים פרימיום יוקרתי">רכב מנהלים פרימיום יוקרתי</option>
+                                                <option value="רכב ספורט קבריולט (גג נפתח)">רכב ספורט קבריולט (גג נפתח)</option>
+                                                <option value="רכב פיקאפ (טנדר)">רכב פיקאפ (טנדר)</option>
+                                                <option value="רכב ג'יפ קטן ל 5 נוסעים">רכב ג'יפ קטן ל 5 נוסעים</option>
+                                                <option value="רכב ג'יפ בינוני ל 5 נוסעים">רכב ג'יפ בינוני ל 5 נוסעים</option>
+                                                <option value="רכב ג'יפ פרימיום יוקרתי ל 5 נוסעים">רכב ג'יפ פרימיום יוקרתי ל 5 נוסעים</option>
+                                                <option value="רכב ג'יפ ל 7 נוסעים">רכב ג'יפ ל 7 נוסעים</option>
+                                                <option value="רכב ג'יפ פרימיום יוקרתי ל 7 נוסעים">רכב ג'יפ פרימיום יוקרתי ל 7 נוסעים </option>
+                                                <option value="מיני ואן ל 7 נוסעים">מיני ואן ל 7 נוסעים</option>
+                                                <option value="ואן ל 12 נוסעים">ואן ל 12 נוסעים</option>
                                             </select>
                                         </div>
                                     </div>
@@ -210,7 +173,7 @@ if(isset($_GET)) {
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <h4 class="titulo-input">HORA DE RECOGIDA</h4>
+                                    <h4 class="titulo-input">שעת איסוף</h4>
                                     <div class="row">
                                         <div class="col-6 pr-1">
                                             <i class="fa fa-clock icono-reloj"></i>
@@ -252,7 +215,7 @@ if(isset($_GET)) {
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <h4 class="titulo-input">HORA DE ENTREGA</h4>
+                                    <h4 class="titulo-input">שעת החזרה</h4>
                                     <div class="row">
                                         <div class="col-6 pr-1">
                                             <i class="fa fa-clock icono-reloj"></i>
@@ -292,41 +255,93 @@ if(isset($_GET)) {
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group input-group" style="margin-top:40.4px" id="acaTel">
+                                    <input
+                                        id="MYphone"
+                                        required
+                                        placeholder="וואטסאפ"
+                                        class="formulario-input"
+                                        name="telefono"
+                                        type="tel"
+                                    />
+                                    <span id="valid-msg" class="hide"></span>
+                                    <span id="error-msg" class="hide"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group" >
+                                <h4 class="titulo-input">פרטים ליצירת קשר</h4>
+                                    <input required class="formulario-input" name="email" placeholder="אימייל" type="email" id="acaEmail" />
+                                </div>
+                            </div>
+                            
                             <div class="col-md-6 mb-4 mt-3">
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="age-25" name="age" value="25" class="custom-control-input formulario-input" required>
-                                    <label class="custom-control-label radio-texto" for="age-25">Conductor +25 años</label>
+                                    <label class="custom-control-label radio-texto" for="age-25">גיל הנהג הוא +25</label>
                                 </div>
                                 <div class="custom-control custom-radio">
                                     <input type="radio" id="age-19" name="age" value="19" class="custom-control-input formulario-input">
-                                    <label class="custom-control-label radio-texto" for="age-19">Conductor 19-24 años</label>
+                                    <label class="custom-control-label radio-texto" for="age-19">גיל הנהג הוא 19-24</label>
                                 </div>
                             </div>
 
                             <div class="col-md-6 mb-4 mt-3">
-                                <select class="custom-select mr-sm-2 formulario-input" style="height:auto;" name="via" id="tipo-contacto" required>
-                                    <option hidden selected value="">Contactar por...</option>
-                                    <option value="wp">WhatsApp</option>
-                                    <option value="em">Email</option>
+                                <select class="custom-select mr-sm-2 formulario-input text-right" style="height:auto;" name="via" id="tipo-contacto" required>
+                                    <option hidden selected value="">צור קשר ב...</option>
+                                    <option value="wp">וואטסאפ</option>
+                                    <option value="em">אימייל</option>
                                 </select>
                             </div>
+
+                           
+<!-- 
+                            
                             <div class="col-md-6">
                                 <div class="form-group input-group oculto" id="acaTel">
-                                    <input class="formulario-input" placeholder="Ingrese su celular" name="telefono" type="tel" id="phone" />
-                                    <span id="valid-msg" class="hide">✓ Válido</span>
+                                    <input class="formulario-input"  placeholder="מספר טלפון" name="telefono" type="tel" id="MYphone" />
+                                    <span id="valid-msg" class="hide">✓ Valid</span>
                                     <span id="error-msg" class="hide"></span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="formulario-input oculto" name="email" placeholder="Ingrese su email" type="email" id="acaEmail" />
+                                    <input class="formulario-input oculto text-right" name="email" placeholder="אימייל" type="email" id="acaEmail" />
                                 </div>
-                            </div>
+                            </div> -->
+
+                            
+
+                            
+
                             <div class="col-md-12 text-right">
-                                <input type="submit" class="boton btn-secundario" name="enviar" value="Contactar" id="enviarForm">
+                                <input type="submit" class="boton btn-secundario" name="enviar" value="שלח" id="enviarForm">
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 order-first-mobile">
+                    <div class="info-banner text-right">
+                        <h1 class="titulo-prin">
+                        המחיר הטוב ביותר בהשכרת כל מכונית בארצות הברית, עבור נהגים בעלי רישיון נהיגה זר. באחריות
+                        </h1>
+                        <p class="w-100">
+                            .המשימה שלנו היא להעניק לך את המחיר וחווית ההשכרה הטובים מכולם                   
+                            <br>!השווה את ההצעה שלנו לכל הצעה אחרת - אנחנו ננצח את כולן
+                            <br>.צור איתנו קשר עכשיו לקבלת הצעת מחיר נטולת סיכונים
+
+                        </p>
+                        <div class="mt-5">
+                            <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" class="boton ml-5 btn-transparente no-mobile">
+                                <i class="las la-envelope"></i>שלח אימייל
+                            </a>
+                            <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank" class="boton btn-transparente">
+                                <i class="lab la-whatsapp"></i>שלח וואטסאפ
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -337,33 +352,33 @@ if(isset($_GET)) {
             <div class="col-lg-3 col-sm-6 un-item">
                 <div class="titulo-item">
                     <i class="fas fa-2x fa-info hov-whi"></i>
-                    <h3 class="texto-negro hov-whi">Soporte 24/7</h3>
+                    <h3 class="texto-negro hov-whi">תמיכה 24/7</h3>
                 </div>
                 <p class="hov-whi">
-                    Estamos disponibles todos los días del año para ayudarlo por teléfono, correo electrónico o WhatsApp.
+                    אנחנו תמיד זמינים לסייע טלפונית, באימייל או בוואטסאפ
                 </p>
             </div>
             <div class="col-lg-3 col-sm-6 un-item">
                 <div class="titulo-item">
                     <i class="fas fa-2x fa-globe-americas hov-whi"></i>
-                    <h3 class="texto-negro hov-whi">DESTINOS EN EEUU</h3>
+                    <h3 class="texto-negro hov-whi">מיקומים בארה"ב</h3>
                 </div>
-                <p class="hov-whi">Disfrute de autos a lo largo y ancho de todo Estados Unidos.
+                <p class="hov-whi">כיסוי בכל רחבי ארצות הברית
                 </p>
             </div>
             <div class="col-lg-3 col-sm-6 un-item">
                 <div class="titulo-item">
                     <i class="fas fa-2x fa-grin-wink hov-whi"></i>
-                    <h3 class="texto-negro hov-whi">EMPRESAS LÍDERES EN ALQUILER DE AUTOS</h3>
+                    <h3 class="texto-negro hov-whi">רכבים מסוכניות השכרה מובילות</h3>
                 </div>
-                <p class="hov-whi">Hertz, Avis, Alamo, etc.<br>Las mismas compañías, pero mejores precios.</p>
+                <p class="hov-whi">הרץ, אוויס, אלאמו ועוד<br>אותן החברות, מחיר זול יותר</p>
             </div>
             <div class="col-lg-3 col-sm-6 un-item">
                 <div class="titulo-item">
                     <i class="fas fa-2x fa-award hov-whi"></i>
-                    <h3 class="texto-negro hov-whi">Diferencial</h3>
+                    <h3 class="texto-negro hov-whi">הכי משתלם</h3>
                 </div>
-                <p class="hov-whi">Ofrecemos los mejores precios durante todo el año.<br>Confírmelo, sin cargo!</p>
+                <p class="hov-whi">אנו מציעים את המחירים הטובים ביותר לאורך כל השנה<br>!נסה אותנו, נטול סיכונים</p>
             </div>
         </div>
     </div>
@@ -371,21 +386,21 @@ if(isset($_GET)) {
     <section class="autos pad-100" id="autos">
         <div class="container">
             <div class="text-center">
-                <h2 class="titulo-seccion raya">Elija su auto</h2>
+                <h2 class="titulo-seccion raya">בחר את המכונית שלך</h2>
                 <p class="mt-5">
-                    Ofrecemos una amplia gama de vehículos para satisfacer sus necesidades:<br>Económicos, SUV, mini vans, modelos de lujo y más.
+                    :אנו מציעים מגוון רחב של רכבים שיתאימו לצרכים שלך<br>קומפקטי, משפחתי, מיני-וואן, דגמי יוקרה ועוד
                 </p>
             </div>
             <div class="text-center mt-5">
                 <ul class="elegir-autos">
                     <li>
                         <button class="boton btn-autos btn-izq auto-activo" type="button" data-toggle="collapse" id="btnEconomico" data-target="#autosEconomico" aria-expanded="true" aria-controls="autosEconomico">
-                            ECONÓMICO
+                        רכבים במחיר מוזל 
                         </button>
                     </li>
                     <li>
                         <button class="boton btn-autos" type="button" data-toggle="collapse" id="btnSedan" data-target="#autosSedan" aria-expanded="true" aria-controls="autosSedan">
-                            SEDAN
+                        רכבי מנהלים 
                         </button>
                     </li>
                     <li>
@@ -395,12 +410,12 @@ if(isset($_GET)) {
                     </li>
                     <li>
                         <button class="boton btn-autos" type="button" data-toggle="collapse" id="btnMiniVan" data-target="#autosMiniVan" aria-expanded="true" aria-controls="autosMiniVan">
-                            MINIVAN y 7 PASAJEROS
+                        רכבים עם 7 מקומות 
                         </button>
                     </li>
                     <li>
                         <button class="boton btn-autos btn-der" type="button" data-toggle="collapse" id="btnPremium" data-target="#autosPremium" aria-expanded="true" aria-controls="autosPremium">
-                            PREMIUM
+                        רכבי PREMIUM
                         </button>
                     </li>
                 </ul>
@@ -1286,21 +1301,20 @@ if(isset($_GET)) {
     <div class="how" id="proceso">
         <div class="container">
             <div class="text-center mb-5">
-                <!-- <h3 class="sub-titulo-seccion">Work Process</h3> -->
-                <h2 class="titulo-seccion texto-blanco">Reserve su auto en sólo 3 pasos</h2>
+                <h2 class="titulo-seccion texto-blanco">הזמן רכב ב-3 צעדים פשוטים</h2>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12 order-last-mobile">
                     <div class="etapa">
                         <div class="icono-etapa">
-                            <i class="fas fa-4x fa-calendar-alt"></i>
+                            <i class="fas fa-4x fa-dollar-sign"></i>
                         </div>
                         <div class="titulo-etapa">
-                            <h4><span>1.</span>Complete la información sobre su viaje</h4>
+                            <h4><span>3.</span>שלם ותהנה מהנסיעה</h4>
                         </div>
                         <div>
                             <p>
-                                Complete el formulario con las fechas, horarios y lugares de recogida y entrega.
+                                ההזמנה הסתיימה והרכב מוכן לאיסוף מהמיקום שבחרת
                             </p>
                         </div>
                     </div>
@@ -1311,30 +1325,30 @@ if(isset($_GET)) {
                             <i class="fas fa-4x fa-comments"></i>
                         </div>
                         <div class="titulo-etapa">
-                            <h4><span>2.</span>OBTENGA UNA COTIZACIÓN SIN CARGO</h4>
+                            <h4><span>2.</span>קבל הצעת מחיר נטולת סיכונים</h4>
                         </div>
                         <div>
                             <p>
-                                Un agente dedicado se comunicará con usted para darle un presupuesto completo y detalles.
+                                סוכן מטעמנו יצור איתך קשר עם הצעת מחיר ופרטיה. אנו מזמינים אתכם להמשיך לחפש הצעת מחיר שתשתווה לשלנו
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-4 col-sm-12 order-first-mobile">
                     <div class="etapa">
                         <div class="icono-etapa">
-                            <i class="fas fa-4x fa-dollar-sign"></i>
+                            <i class="fas fa-4x fa-calendar-alt"></i>
                         </div>
                         <div class="titulo-etapa">
-                            <h4><span>3.</span>REALICE EL PAGO Y DISFRUTE DEL VIAJE</h4>
+                            <h4><span>1.</span>שתף אותנו בפרטי הנסיעה שלך</h4>
                         </div>
                         <div>
                             <p>
-                                Su reserva está completa y lista para recoger en el lugar que elija.
+                                מלא את הטופס עם תאריכי, שעות ומיקום האיסוף וההחזרה
                             </p>
                         </div>
                     </div>
-                </div>
+                </div>      
             </div>
         </div>
     </div>
@@ -1342,13 +1356,13 @@ if(isset($_GET)) {
     <div class="opiniones pad-100" id="opiniones">
         <div class="container">
             <div class="text-center">
-                <h3 class="sub-titulo-seccion">Opiniones</h3>
-                <h2 class="titulo-seccion raya">Opiniones destacadas</h2>
+                <h3 class="sub-titulo-seccion">עדויות מלקוחות</h3>
+                <h2 class="titulo-seccion raya">ביקורות מובילות</h2>
             </div>
             <div class="carousel-opiniones">
                 <div class="slide-item opinion">
                     <div class="imagen-opinion">
-                        <img loading="lazy" src="../img/testimonial-dorel.jpg" alt="Dorel Opinion">
+                        <img loading="lazy" src="../img/testimonial-dorel.jpg" alt="Dorel Review">
                     </div>
                     <div class="contenido">
                         <div class="estrellas">
@@ -1359,17 +1373,18 @@ if(isset($_GET)) {
                             <i class="fas fa-star"></i>
                         </div>
                         <blockquote>
-                            He alquilado autos en 3 ocasiones con CarzRental en mi última visita a Estados Unidos, en 3 ciudades distintas. Impresionante la diferencia de precio con otras empresas y muy satisfecho con el trato amigable, personal y rápido de atención al cliente.
-                            Siempre me respondieron rápido, por mail o Whatsapp. Recomiendo ampliamente a CarzRental y sin dudas volveré a alquilar con ellos.
+                            I&#39;ve rented a car three times through &quot;CarzRental&quot; on my last visit to the US in a three different cities. Among the low quotes that I received, I was very impressed and satisfied by the friendly, personal, fast and efficient costumer service
+                            of this great car rental brokers which always were there to support and help in any small matter. I highly recommend for any traveler to book through these guys and I definitely going to book through them on my next visit to
+                            the US.
                         </blockquote>
                         <p class="nombre-opinion">Dorel</p>
-                        <p cla ss="origen-opinion">Barcelona, España</p>
+                        <p class="origen-opinion">Barcelona, Spain</p>
 
                     </div>
                 </div>
                 <div class="slide-item opinion">
                     <div class="imagen-opinion">
-                        <img loading="lazy" src="../img/testimonial-nico.jpg" alt="Nico Opinion">
+                        <img loading="lazy" src="../img/testimonial-nico.jpg" alt="Nico Review">
                     </div>
                     <div class="contenido">
                         <div class="estrellas">
@@ -1380,8 +1395,7 @@ if(isset($_GET)) {
                             <i class="fas fa-star"></i>
                         </div>
                         <blockquote>
-                            CarzRental hizo que mis vacaciones sean más simples. Me ofrecieron una SUV por un precio realmente barato. Alquilé en el aeropuerto de Orlando, todo fue sencillo, rápido y claro y tuve una buena experiencia. Estoy seguro de que mi próximo viaje voy a
-                            alquilar un auto con CarzRental de nuevo!
+                            CarzRental made my vacation easier. They offered me a SUV for a really cheap price. I took it from Orlando airport, everything was smooth and I had a really good overall experience. I am sure that in the future I will contact CarzRental again!
                         </blockquote>
                         <p class="nombre-opinion">Nico</p>
                         <p class="origen-opinion">Buenos Aires, Argentina</p>
@@ -1390,7 +1404,7 @@ if(isset($_GET)) {
                 </div>
                 <div class="slide-item opinion">
                     <div class="imagen-opinion">
-                        <img loading="lazy" src="../img/ALEX.jpg" alt="ALEX SPITZ Opinion">
+                        <img loading="lazy" src="../img/testimonial-rafi.jpg" alt="Rafi Review">
                     </div>
                     <div class="contenido">
                         <div class="estrellas">
@@ -1401,7 +1415,87 @@ if(isset($_GET)) {
                             <i class="fas fa-star"></i>
                         </div>
                         <blockquote>
-                            Viajé a Miami y Orlando en Febrero del 2020. Alquilamos el auto en CarzRental (HERTZ). Tuve un upgrade del auto sin costo adicional, la verdad no puedo pedir más! Recomiendo.
+                            I was looking to rent a car for my trip to San Francisco, on February 2020. I must say that I got a really professional service from CarzRental agent. He helped me choose the right car for my needs and everything was great. Also, after comparing CarzRental
+                            offer to other offers I got, CarzRental price was the lowest. As I landed in SF airport, everything went smoothly with the rental car company, like a Swiss watch. Based on my personal experience with CarzRental, I will definitely
+                            rent cars from CarzRental again in the future!
+                        </blockquote>
+                        <p class="nombre-opinion">Rafi</p>
+                        <p class="origen-opinion">Tel Aviv, Israel</p>
+
+                    </div>
+                </div>
+                <div class="slide-item opinion">
+                    <div class="imagen-opinion">
+                        <img loading="lazy" src="../img/testimonial-lee.jpg" alt="Lee Review">
+                    </div>
+                    <div class="contenido">
+                        <div class="estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            I took a car for 3 days here in Brooklyn, NYC. Everything was great! I must say that I always had a direct conversation with the agent via WhatsApp. That is really helpful. He helped me a lot with the rental and also the price was the best one I found
+                            on the web. AAA service and price, that&#39;s why from now on, I will always rent from CarzRental!
+                        </blockquote>
+                        <p class="nombre-opinion">Lee</p>
+                        <p class="origen-opinion">Brooklyn, New York, USA</p>
+                    </div>
+                </div>
+                <div class="slide-item opinion">
+                    <div class="imagen-opinion">
+                        <img loading="lazy" src="../img/PABLO.jpg" alt="Pablo Review">
+                    </div>
+                    <div class="contenido">
+                        <div class="estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            I used CarzRental service on my last vacation to the US. The service was excellent. The price even better! I fully recommend CarzRental for all people who travels to the US and needs a car.
+                        </blockquote>
+                        <p class="nombre-opinion">Pablo</p>
+                        <p class="origen-opinion">Tel Aviv, Israel</p>
+                    </div>
+                </div>
+                <div class="slide-item opinion">
+                    <div class="imagen-opinion">
+                        <img loading="lazy" src="../img/DAN.jpg" alt="Dan Review">
+                    </div>
+                    <div class="contenido">
+                        <div class="estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            Unbeatable customer service. That&#39;s the most important thing I could say about CarzRental. Had some issues with my timetable and CarzRental agent was there to rebook everything quickly as possible. Super service and great prices as well!
+                        </blockquote>
+                        <p class="nombre-opinion">Dan</p>
+                        <p class="origen-opinion">London, UK</p>
+                    </div>
+                </div>
+                <div class="slide-item opinion">
+                    <div class="imagen-opinion">
+                        <img loading="lazy" src="../img/ALEX.jpg" alt="ALEX SPITZ Review">
+                    </div>
+                    <div class="contenido">
+                        <div class="estrellas">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>
+                            Went to Miami and Orlando on February 2020 and took the car from CarzRental (HERTZ). I even got an upgrade of the vehicle. Things went out smoothly and I couldn&#39;t ask for more.
                         </blockquote>
                         <p class="nombre-opinion">Alex Spitz</p>
                         <p class="origen-opinion">Buenos Aires, Argentina</p>
@@ -1409,64 +1503,7 @@ if(isset($_GET)) {
                 </div>
                 <div class="slide-item opinion">
                     <div class="imagen-opinion">
-                        <img loading="lazy" src="../img/MELU.jpeg" alt="Melu Opinion">
-                    </div>
-                    <div class="contenido">
-                        <div class="estrellas">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <blockquote>
-                            Super recomendable, excelente atencion
-                        </blockquote>
-                        <p class="nombre-opinion">Melu</p>
-                        <p class="origen-opinion">Vicente Lopez, Argentina</p>
-                    </div>
-                </div>
-                <div class="slide-item opinion">
-                    <div class="imagen-opinion">
-                        <img loading="lazy" src="../img/MARTINA.jpeg" alt="Martina Opinion">
-                    </div>
-                    <div class="contenido">
-                        <div class="estrellas">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <blockquote>
-                            Excelente atención de Matias.
-                        </blockquote>
-                        <p class="nombre-opinion">Martina</p>
-                        <p class="origen-opinion">Buenos Aires, Argentina</p>
-                    </div>
-                </div>
-                <div class="slide-item opinion">
-                    <div class="imagen-opinion">
-                        <img loading="lazy" src="../img/MATIAS.jpeg" alt="Matias Opinion">
-                    </div>
-                    <div class="contenido">
-                        <div class="estrellas">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <blockquote>
-                        Gracias por todo! excelente servicio, inmejorable precio
-                        </blockquote>
-                        <p class="nombre-opinion">Matias</p>
-                        <p class="origen-opinion">Tigre, Argentina</p>
-                    </div>
-                </div>
-                <div class="slide-item opinion">
-                    <div class="imagen-opinion">
-                        <img loading="lazy" src="../img/GUY.jpg" alt="Guy Opinion">
+                        <img loading="lazy" src="../img/GUY.jpg" alt="Guy Review">
                     </div>
                     <div class="contenido">
                         <div class="estrellas">
@@ -1493,15 +1530,16 @@ if(isset($_GET)) {
                 <img src="../img/Why_Choose_Us_Carz_Rental.png" alt="¿Por que CarzRental?">
             </div>
             <div class="col-lg-6 col-sm-12">
-                <div class="info-porque">
-                    <h2 class="titulo-seccion raya raya-izq">¿Por qué elegirnos?</h2>
-                    <p class="mb-5">
-                        Le ofrecemos la misma calidad de autos de las mejores compañías de alquiler en EEUU, a un mejor precio.<br>Además, nosotros estamos aquí 24/7 para ayudar con los asuntos relacionados a la reserva.<br>En CarzRental tendrá una
-                        cobertura de seguro completa. Las coberturas LDW y LIS siempre están incluidas en nuestro precio.<br>También se incluye kilometraje ilimitado, para que pueda conducir sin preocuparse por los costos adicionales.
+                <div class="info-porque text-right">
+                    <h2 class="titulo-seccion text-right">?למה לבחור בנו</h2>
+                    <p class="mb-5 text-right">
+                        אנו מציעים את אותה איכות המכוניות והשירות המוצע על ידי סוכנויות השכרת הרכב המובילות בארה"ב, בעבור מחיר טוב יותר. בנוסף, אנחנו כסוכנים שלך כאן כדי לסייע לך בכל נושא הקשור להזמנה.
+                        <br>
+                        ב-CarzRental, השכרת הרכב כולל כיסוי ביטוחי מלא. כיסויי LDW ו-LIS תמיד כלולים במחיר כמו גם קליומטרים ללא הגבלה כך שתוכל לנהוג ללא דאגות בנוגע לחיובים נוספים.
                     </p>
-                    <a onclick="return gtag_report_conversion('#formulario-contacto');" href="#formulario-contacto" class="boton btn-primario mt-5">Alquilar</a>
-
-                    <a class="slogan-ig" href="https://www.instagram.com/carz_rental" target="_blank">#MakeTripsBetter</a>
+                    
+                    <a onclick="return gtag_report_conversion('#formulario-contacto');" href="#formulario-contacto" class="boton btn-primario mt-5 text-right">להזמנת רכב</a>
+                    <a class="slogan-ig text-right" href="https://www.instagram.com/carz_rental" target="_blank">#MakeTripsBetter</a>
                 </div>
             </div>
         </div>
@@ -1512,19 +1550,19 @@ if(isset($_GET)) {
             <div class="row">
                 <div class="col-lg-9 col-md-12">
                     <div class="soporte foot-flex">
-                        <h5>Soporte 24/7</h5>
+                        <h5>תמיכה - 24/7</h5>
                         <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
-                            <i class="fab fa-lg	fa-whatsapp"></i> +1 (786) 820‑8222
+                            <i class="fab fa-lg	fa-whatsapp"></i> +1 (786) 820-8222
                         </a>
-                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com" target="_blank">
-                            <i class="far fa-lg	fa-envelope"></i> info@carzrental.com
+                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net" target="_blank">
+                            <i class="far fa-lg	fa-envelope"></i> info@carzrental.net
                         </a>
 
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-12">
                     <div class="foot-flex logos">
-                        <h5>¡Síguenos!</h5>
+                        <h5>עקבו אחרינו</h5>
                         <a class="ml-0" href="https://www.facebook.com/CarzRental-104359937823737/" target="_blank">
                             <i class="fab fa-lg	fa-facebook"></i>
                         </a>
@@ -1539,12 +1577,12 @@ if(isset($_GET)) {
 
     <footer class="pad-100">
         <div class="container">
-            <div class="row">
+            <div class="row text-right">
                 <div class="col-md-3 col-sm-6 info-footer">
-                    <h5 class="titulo-footer raya raya-footer">Sobre Nosotros</h5>
+                    <h5 class="titulo-footer raya-he raya-footer-he">אודותינו</h5>
                     <img loading="lazy" src="../img/Logo_Carz_rental_blanco.png" alt="Carz Rental" style="height: 50px; margin-bottom:20px;">
                     <p>
-                        El mejor precio para alquiler de autos en EEUU, para titulares de licencias de conducir extranjeras.
+                        המחיר הטוב ביותר לחבילות השכרת רכב בארה"ב למחזיקי רישיון נהיגה זר.
                     </p>
                     <div class="logos">
                         <a href="https://www.facebook.com/CarzRental-104359937823737/" target="_blank">
@@ -1553,51 +1591,51 @@ if(isset($_GET)) {
                         <a href="https://www.instagram.com/carz_rental" target="_blank">
                             <i class="fab fa-lg fa-instagram"></i>
                         </a>
-                        <a onclick="return gtag_report_conversion('<?php echo $wpLink ?>');" href="<?php echo $wpLink ?>" target="_blank">
+                        <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
                             <i class="fab fa-lg fa-whatsapp"></i>
                         </a>
-                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.com');" href="mailto:info@carzrental.com">
+                        <a onclick="return gtag_report_conversion('mailto:info@carzrental.net');" href="mailto:info@carzrental.net">
                             <i class="fas fa-lg fa-envelope"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 info-footer">
-                    <h5 class="titulo-footer raya raya-footer">Información</h5>
+                    <h5 class="titulo-footer raya-he raya-footer-he">מידע</h5>
                     <ul class="secciones-footer">
                         <a href="#inicio">
-                            <li>Inicio</li>
+                            <li>ראשי</li>
                         </a>
                         <a href="#autos">
-                            <li>Nuestros autos</li>
+                            <li>המכוניות שלנו</li>
                         </a>
                         <a href="#proceso">
-                            <li>Reserve un auto en 3 pasos</li>
+                            <li>הזמנת רכב ב-3 שלבים פשוטים</li>
                         </a>
                         <a href="#opiniones">
-                            <li>Opiniones</li>
+                            <li>ביקורות</li>
                         </a>
                         <a onclick="return gtag_report_conversion('#inicio');" href="#inicio">
-                            <li>Contacto</li>
+                            <li>צור קשר</li>
                         </a>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6 info-footer">
-                    <h5 class="titulo-footer raya raya-footer">Soporte</h5>
-                    <!-- <p>¿Necesita ayuda?</p> -->
+                    <h5 class="titulo-footer raya-he raya-footer-he">תמיכה</h5>
+                    <p>?זקוק לעזרה</p>
                     <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" class="un-link no-margin" target="_blank">
-                        <p>¿Necesita ayuda? Haga clic aquí para chatear con un representante de atención al cliente a través de WhatsApp.</p>
+                        <p>לחץ כאן בכדי לשוחח עם נציג שירות לקוחות באמצעות הוואטסאפ</p>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6 info-footer">
-                    <h5 class="titulo-footer raya raya-footer">Legal</h5>
+                    <h5 class="titulo-footer raya-he raya-footer-he">מדיניות</h5>
                     <a href="../Privacy-Policy-CarzRental.php" target="_blank" class="un-link no-margin">
-                        Privacidad
+                        פרטיות
                     </a><br>
                     <a href="../Cookies-CarzRental.php" target="_blank" class="un-link no-margin">
-                        Cookies
+                        עוגיות
                     </a><br>
                     <a href="../Terms-&-Conditions-CarzRental.php" target="_blank" class="un-link no-margin">
-                       Términos y Condiciones
+                        תנאים
                     </a>
                 </div>
             </div>
@@ -1605,9 +1643,9 @@ if(isset($_GET)) {
     </footer>
     <div class="barra-footer">
         <div class="container text-center info-copy">
-            <p>Todos los derechos reservados CarzRental &copy; 2020</p>
+            <p>כל הזכויות שמורות ל-CarzRental 2020</p>
             <p>
-                Desarrollado por
+                Developed by
                 <a target="_blank" href="http://desarrollo.infinidad.com.ar/">
                     <img src="../img/infinidad-desarrollo.png" style="height:24px" alt="Desarrollado por Infinidad Desarrollo">
                 </a>
@@ -1616,44 +1654,10 @@ if(isset($_GET)) {
     </div>
 
     <div class="globo-wpp">
-        <a onclick="return gtag_report_conversion('<?php echo $wpLink ?>');" href="<?php echo $wpLink ?>" target="_blank">
+        <a onclick="return gtag_report_conversion('http://wa.me/17868208222');" href="http://wa.me/17868208222" target="_blank">
             <img src="../img/whatsapp_logo.jpg" alt="Contactanos 24/7 - WhatsApp">
         </a>
     </div>
-    
-    <?php
-    $date_now = date("Y-m-d");
-
-    if ($date_now > '2021-10-31') {
-        $imagen = null;
-        if($date_now < '2021-11-04') {
-            // Banner lunes
-            $imagen = '2021-lunes.jpg';
-        } else if ($date_now < '2021-11-06') {
-            // Banner jueves
-            $imagen = '2021-jueves.jpg';
-        } else {
-            $imagen = null;
-        }
-        
-        if($imagen != null) { ?>
-            <div class="modal fade" id="modalCyberMonday" tabindex="-1" role="dialog" aria-labelledby="modalCyberMondayTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 650px;">
-                            <div class="modal-content" style="margin: 0 0 0 0; padding: 0 0 0 0; width: 99%;">
-                                <div class="modal-body p-0">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height: 0; position: relative; top: 10px; left: -10px;">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <a href="https://wa.link/w5lf0x" target="_blank">
-                                        <img alt="CyberMonday 2021" src="./../img/<?php echo $imagen ?>" style="width: 100%; height: auto;" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <?php
-        }
-    } ?>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -1670,12 +1674,59 @@ if(isset($_GET)) {
     <script type="text/javascript" src="../js/app.js"></script>
     <script type="text/javascript" src="../js/func.js"></script>
     <?php require_once 'verificacion.php'; ?>
-    
-    <script type="text/javascript">
-        $(window).on('load', function() {
-            $('#modalCyberMonday').modal('show');
+
+    <script>
+        var input = document.querySelector("#MYphone"),
+            errorMsg = document.querySelector("#error-msg"),
+            validMsg = document.querySelector("#valid-msg");
+
+
+        var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+        var iti = window.intlTelInput(input, {
+            utilsScript: "intlTelInput/js/utils.js",
+            preferredCountries: ["us","il"],
+            nationalMode: false,
+            separateDialCode: false,
         });
-    </script>  
+
+        var reset = function() {
+            input.classList.remove("error");
+            errorMsg.innerHTML = "";
+            errorMsg.classList.add("hide");
+            validMsg.classList.add("hide");
+        };
+
+        input.addEventListener('blur', function() {
+            reset();
+            if (input.value.trim()) {
+                if (iti.isValidNumber()) {
+                    validMsg.classList.remove("hide");
+                } else {
+                    input.classList.add("error");
+                    var errorCode = iti.getValidationError();
+                    errorMsg.innerHTML = errorMap[errorCode];
+                    errorMsg.classList.remove("hide");
+                }
+            }
+        });
+
+        input.addEventListener('change', reset);
+        input.addEventListener('keyup', reset);
+
+        var enviarFormulario = document.querySelector("#enviarForm");
+        enviarFormulario.addEventListener('click', function(e) {
+            var seleccionado = document.getElementById("tipo-contacto");
+            var opcionElegida = seleccionado.options[seleccionado.selectedIndex].text;
+            if (opcionElegida === 'Email') {
+                if (!(iti.isValidNumber())) {
+                    e.preventDefault();
+                }
+            }
+        });
+      </script>
+
+    
     
     <!-- Facebook Pixel Code -->
     <script>
