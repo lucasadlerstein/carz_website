@@ -23,7 +23,7 @@ if($age == '19'){
     $driverEmail = "El conductor es mayor de 25 años";
 }
 
-$texto = "Hola,%20quisiera%20alquilar%20un%20auto%20en%20EEUU.%0D$dates%0DPick-Up:%20$pickup%20-%20$pickuptime%0DDrop-Off:%20$dropoff%20-%20$dropofftime%0D$categoria%0D$driver%0DEmail:%20$email%Telefono:%20$telefono";
+$texto = "Hola,%20quisiera%20alquilar%20un%20auto%20en%20EEUU.%0a$dates%0aPick-Up:%20$pickup%20-%20$pickuptime%0aDrop-Off:%20$dropoff%20-%20$dropofftime%0a$categoria%0a$driver%0aEmail:%20$email%Telefono:%20+$telefono";
 
 if($via == 'wp'){
     header("Location: https://wa.me/17868208222?text=$texto");
@@ -37,7 +37,7 @@ if($via == 'wp'){
     $e_body = "Hola, quiero recibir más información para alquilar un auto en EEUU." . PHP_EOL . PHP_EOL;
     $e_content = $dates . PHP_EOL;
     $e_content .= "Pick-Up: $pickup - $pickuptime" . PHP_EOL . "Drop-Off: $dropoff - $dropofftime" . PHP_EOL . "Categoría: $categoria" . PHP_EOL;
-    $e_content .= $driverEmail . PHP_EOL . "https://web.whatsapp.com/send?phone=$telefono" . PHP_EOL . PHP_EOL;
+    $e_content .= $driverEmail . PHP_EOL . "https://wa.me/$telefono" . "https://web.whatsapp.com/send?phone==$telefono" . PHP_EOL . PHP_EOL;
     $e_reply = "Datos de contacto: $email - $telefono";
 
     $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
